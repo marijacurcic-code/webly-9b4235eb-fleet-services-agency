@@ -1,0 +1,102 @@
+{
+  "name": "service-detail",
+  "title": "Service Details | Fleet Services Agency",
+  "status": "existing",
+  "type": "page",
+  "path": "/services/:slug",
+  "component": "src/pages/ServiceDetailPage.tsx",
+  "layout": "RootLayout",
+  "heroMedia": "detailed close-up of fleet service operations",
+  "showHeader": true,
+  "showFooter": true,
+  "inHeaderNav": false,
+  "inFooterNav": false,
+  "navOrder": 0,
+  "sections": [
+    {
+      "component": "ServiceDetailSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "card",
+        "badge",
+        "button"
+      ],
+      "stateDescription": "Receives item (service record resolved from the current route), loading, and error state from the page binding. Render the primary service details from item and use item.slug as the canonical related-item exclusion key when needed by child links."
+    },
+    {
+      "component": "RelatedServicesSection",
+      "executionLevel": 2,
+      "dependsOn": [
+        "ServiceDetailSection"
+      ],
+      "shadcnComponents": [
+        "card",
+        "button"
+      ],
+      "stateDescription": "Receives item (current service) and relatedItems (other service records from the same collection with the current item excluded). Must render only relatedItems and never include the current item identified by item.slug."
+    },
+    {
+      "component": "CtaBannerSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "button",
+        "card"
+      ]
+    },
+    {
+      "component": "ContactSplitSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "input",
+        "textarea",
+        "button",
+        "card"
+      ]
+    }
+  ],
+  "sectionContentKeys": {
+    "ServiceDetailSection": "serviceDetail",
+    "RelatedServicesSection": "relatedServices",
+    "CtaBannerSection": "ctaBanner",
+    "ContactSplitSection": "contact"
+  },
+  "dataBindings": [
+    {
+      "id": "serviceDetail",
+      "kind": "collectionItem",
+      "source": "services",
+      "idField": "slug",
+      "routeParam": "slug",
+      "urlSync": false,
+      "consumers": [
+        {
+          "component": "ServiceDetailSection",
+          "role": "item"
+        },
+        {
+          "component": "RelatedServicesSection",
+          "role": "related"
+        }
+      ]
+    }
+  ],
+  "hash": "74605050314c8568",
+  "agentPageDescription": "The service detail page explains one offering in more depth for visitors who want specifics before reaching out. It supports decision-making by giving a focused, trustworthy view of the service. Tone: informative, precise, and reassuring.",
+  "agentInstructions": "Page purpose: A detailed service page explaining one fleet service in depth, with related options and a contact prompt.\n\nSections:\n- ServiceDetailSection: collection-bound. The service title, description, and detailed content come from the live service item. Write only labels, short introductory text, and any empty-state or supporting copy; do not invent service-specific facts.\n- RelatedServicesSection: collection-bound. Related service cards come from live collection data. Write only the heading, short subtitle, and any empty-state text; do not write item details.\n- CtaBannerSection: pure-static. Write a concise CTA encouraging businesses to request a quote or learn more.\n- ContactSplitSection: pure-static. Provide contact-oriented headline, supportive copy, and form/help text; keep it professional and local-business focused.",
+  "seo": {
+    "metaDescription": "",
+    "ogTitle": "",
+    "ogDescription": "",
+    "twitterCard": "summary_large_image",
+    "jsonLd": {
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "values": {}
+    }
+  }
+}

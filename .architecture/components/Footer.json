@@ -1,0 +1,47 @@
+{
+  "name": "Footer",
+  "type": "navigation",
+  "file": "src/components/Footer.tsx",
+  "executionLevel": 3,
+  "dependsOn": [
+    "BrandLogo",
+    "FooterNav",
+    "SocialLinks"
+  ],
+  "shadcnComponents": [],
+  "props": [
+    {
+      "name": "brand",
+      "type": "string",
+      "required": true,
+      "description": "Brand name"
+    },
+    {
+      "name": "tagline",
+      "type": "string",
+      "required": true,
+      "description": "Footer tagline"
+    },
+    {
+      "name": "copyright",
+      "type": "string",
+      "required": true,
+      "description": "Copyright text"
+    },
+    {
+      "name": "navLinks",
+      "type": "{ label: string; href: string }[]",
+      "required": true,
+      "description": "Footer navigation links"
+    },
+    {
+      "name": "socials",
+      "type": "{ platform: string; href: string; label: string }[]",
+      "required": true,
+      "description": "Social links"
+    }
+  ],
+  "description": "Minimal footer with brand, legal links, and copyright.",
+  "hash": "47fb9b56bac5f55e",
+  "action": "existing"
+}

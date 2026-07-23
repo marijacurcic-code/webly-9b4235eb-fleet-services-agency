@@ -1,0 +1,54 @@
+{
+  "file": "src/App.tsx",
+  "routes": [
+    {
+      "path": "/",
+      "page": "index",
+      "component": "src/pages/HomePage.tsx",
+      "layout": "RootLayout"
+    },
+    {
+      "path": "/about",
+      "page": "about",
+      "component": "src/pages/AboutPage.tsx",
+      "layout": "RootLayout"
+    },
+    {
+      "path": "/services",
+      "page": "services",
+      "component": "src/pages/ServicesPage.tsx",
+      "layout": "RootLayout"
+    },
+    {
+      "path": "/services/:slug",
+      "page": "service-detail",
+      "component": "src/pages/ServiceDetailPage.tsx",
+      "layout": "RootLayout"
+    },
+    {
+      "path": "/contact",
+      "page": "contact",
+      "component": "src/pages/ContactPage.tsx",
+      "layout": "RootLayout"
+    },
+    {
+      "path": "/privacy",
+      "page": "privacy",
+      "component": "src/pages/PrivacyPage.tsx",
+      "layout": "RootLayout"
+    },
+    {
+      "path": "/terms",
+      "page": "terms",
+      "component": "src/pages/TermsPage.tsx",
+      "layout": "RootLayout"
+    },
+    {
+      "path": "*",
+      "page": "404",
+      "component": "src/pages/NotFoundPage.tsx",
+      "layout": "RootLayout"
+    }
+  ],
+  "errorComponent": "src/pages/NotFoundPage.tsx"
+}

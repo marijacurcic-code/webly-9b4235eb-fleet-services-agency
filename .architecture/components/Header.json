@@ -1,0 +1,32 @@
+{
+  "name": "Header",
+  "type": "navigation",
+  "file": "src/components/Header.tsx",
+  "executionLevel": 3,
+  "dependsOn": [
+    "BrandLogo",
+    "NavLinks",
+    "MobileMenuToggle"
+  ],
+  "shadcnComponents": [
+    "button",
+    "sheet"
+  ],
+  "props": [
+    {
+      "name": "brand",
+      "type": "string",
+      "required": true,
+      "description": "Brand name"
+    },
+    {
+      "name": "navLinks",
+      "type": "{ label: string; href: string }[]",
+      "required": true,
+      "description": "Top navigation links"
+    }
+  ],
+  "description": "Top navigation bar with responsive mobile menu.",
+  "hash": "93185e6e7f709247",
+  "action": "existing"
+}

@@ -1,0 +1,70 @@
+{
+  "name": "ServiceCard",
+  "type": "shared",
+  "file": "src/components/ServiceCard.tsx",
+  "executionLevel": 1,
+  "dependsOn": [],
+  "shadcnComponents": [
+    "card",
+    "button"
+  ],
+  "props": [
+    {
+      "name": "id",
+      "type": "string",
+      "required": false,
+      "description": "Service record id"
+    },
+    {
+      "name": "slug",
+      "type": "string",
+      "required": false,
+      "description": "Service slug"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Service title"
+    },
+    {
+      "name": "excerpt",
+      "type": "string",
+      "required": false,
+      "description": "Short service summary"
+    },
+    {
+      "name": "imageUrl",
+      "type": "string",
+      "required": false,
+      "description": "Service image URL"
+    },
+    {
+      "name": "imageAlt",
+      "type": "string",
+      "required": false,
+      "description": "Service image alt text"
+    },
+    {
+      "name": "serviceArea",
+      "type": "string",
+      "required": false,
+      "description": "Primary service area"
+    },
+    {
+      "name": "href",
+      "type": "string",
+      "required": false,
+      "description": "Optional service link"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Optional class name"
+    }
+  ],
+  "description": "Service listing card used across homepage and service pages.",
+  "hash": "a3fa8e401251b210",
+  "action": "existing"
+}

@@ -1,0 +1,42 @@
+{
+  "name": "ProcessSection",
+  "type": "section",
+  "file": "src/components/ProcessSection.tsx",
+  "contentKey": "process",
+  "executionLevel": 2,
+  "dependsOn": [
+    "SectionHeading",
+    "ProcessStep"
+  ],
+  "shadcnComponents": [
+    "card"
+  ],
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Section title"
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "required": false,
+      "description": "Section subtitle"
+    },
+    {
+      "name": "steps",
+      "type": "{ step: string; title: string; description: string }[]",
+      "required": true,
+      "description": "Process steps"
+    }
+  ],
+  "description": "Step-by-step process explaining service delivery for business clients.",
+  "staticContentKeys": [
+    "title",
+    "subtitle",
+    "steps"
+  ],
+  "hash": "74b05a5fa5178eee",
+  "action": "existing"
+}

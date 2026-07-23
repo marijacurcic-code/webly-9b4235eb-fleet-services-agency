@@ -1,0 +1,49 @@
+{
+  "name": "RelatedServicesSection",
+  "type": "section",
+  "file": "src/components/RelatedServicesSection.tsx",
+  "contentKey": "relatedServices",
+  "executionLevel": 2,
+  "dependsOn": [
+    "SectionHeading",
+    "ServiceCard"
+  ],
+  "shadcnComponents": [],
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Section title"
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "required": false,
+      "description": "Section subtitle"
+    },
+    {
+      "name": "items",
+      "type": "any[]",
+      "required": true,
+      "description": "Related services"
+    },
+    {
+      "name": "currentItemId",
+      "type": "string",
+      "required": true,
+      "description": "Current service id"
+    }
+  ],
+  "description": "Related services section shown on service detail pages.",
+  "staticContentKeys": [
+    "title",
+    "subtitle"
+  ],
+  "collectionContentKeys": [
+    "items"
+  ],
+  "dataRole": "related",
+  "hash": "04eb691d5ac7628a",
+  "action": "existing"
+}

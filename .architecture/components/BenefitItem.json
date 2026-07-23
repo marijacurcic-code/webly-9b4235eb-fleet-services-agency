@@ -1,0 +1,37 @@
+{
+  "name": "BenefitItem",
+  "type": "shared",
+  "file": "src/components/BenefitItem.tsx",
+  "executionLevel": 1,
+  "dependsOn": [],
+  "shadcnComponents": [],
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Benefit title"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "required": true,
+      "description": "Benefit description"
+    },
+    {
+      "name": "icon",
+      "type": "string",
+      "required": false,
+      "description": "Lucide icon name"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Optional class name"
+    }
+  ],
+  "description": "Compact benefit item for service advantages.",
+  "hash": "e0c39ce02fa0b68f",
+  "action": "existing"
+}

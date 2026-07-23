@@ -1,0 +1,131 @@
+{
+  "table": "services",
+  "primaryKey": "id",
+  "uniqueKeys": [
+    "slug"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "integer",
+      "nullable": false,
+      "isPrimary": true,
+      "autoIncrement": true
+    },
+    {
+      "name": "slug",
+      "type": "text",
+      "nullable": false,
+      "unique": true
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "nullable": false
+    },
+    {
+      "name": "imageUrl",
+      "type": "image",
+      "nullable": false,
+      "aspectRatio": "3:2",
+      "usage": "card",
+      "orientation": "landscape",
+      "altTemplate": "{title} service in action"
+    },
+    {
+      "name": "imageDescription",
+      "type": "text",
+      "nullable": false
+    },
+    {
+      "name": "imageAlt",
+      "type": "text",
+      "nullable": false
+    },
+    {
+      "name": "createdAt",
+      "type": "timestamptz",
+      "nullable": false,
+      "default": "now()"
+    },
+    {
+      "name": "category",
+      "type": "text",
+      "nullable": false
+    },
+    {
+      "name": "startingPrice",
+      "type": "numeric",
+      "nullable": false
+    },
+    {
+      "name": "pricingModel",
+      "type": "text",
+      "nullable": false
+    },
+    {
+      "name": "minimumFleetSize",
+      "type": "integer",
+      "nullable": false
+    },
+    {
+      "name": "typicalTimeline",
+      "type": "text",
+      "nullable": false
+    },
+    {
+      "name": "serviceArea",
+      "type": "text",
+      "nullable": false
+    },
+    {
+      "name": "shortDescription",
+      "type": "text",
+      "nullable": false
+    },
+    {
+      "name": "detailedContent",
+      "type": "text",
+      "nullable": false
+    },
+    {
+      "name": "includes",
+      "type": "text[]",
+      "nullable": false
+    },
+    {
+      "name": "deliverables",
+      "type": "text[]",
+      "nullable": false
+    },
+    {
+      "name": "idealFor",
+      "type": "text[]",
+      "nullable": false
+    },
+    {
+      "name": "requirements",
+      "type": "text[]",
+      "nullable": false
+    },
+    {
+      "name": "isPopular",
+      "type": "boolean",
+      "nullable": false
+    },
+    {
+      "name": "isAvailable",
+      "type": "boolean",
+      "nullable": false
+    },
+    {
+      "name": "images",
+      "type": "image[]",
+      "nullable": false,
+      "aspectRatio": "4:3",
+      "usage": "gallery",
+      "orientation": "landscape",
+      "altTemplate": "{title} gallery image"
+    }
+  ]
+}

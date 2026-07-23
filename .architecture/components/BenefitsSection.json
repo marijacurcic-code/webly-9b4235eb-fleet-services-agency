@@ -1,0 +1,40 @@
+{
+  "name": "BenefitsSection",
+  "type": "section",
+  "file": "src/components/BenefitsSection.tsx",
+  "contentKey": "benefits",
+  "executionLevel": 2,
+  "dependsOn": [
+    "SectionHeading",
+    "BenefitItem"
+  ],
+  "shadcnComponents": [],
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Section title"
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "required": false,
+      "description": "Section subtitle"
+    },
+    {
+      "name": "items",
+      "type": "{ title: string; description: string; icon?: string }[]",
+      "required": true,
+      "description": "Benefit items"
+    }
+  ],
+  "description": "Why-choose-us benefits section for B2B fleet services.",
+  "staticContentKeys": [
+    "title",
+    "subtitle",
+    "items"
+  ],
+  "hash": "fe93295e46ae0c26",
+  "action": "existing"
+}

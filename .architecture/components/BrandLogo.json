@@ -1,0 +1,31 @@
+{
+  "name": "BrandLogo",
+  "type": "shared",
+  "file": "src/components/BrandLogo.tsx",
+  "executionLevel": 1,
+  "dependsOn": [],
+  "shadcnComponents": [],
+  "props": [
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "description": "Brand name"
+    },
+    {
+      "name": "href",
+      "type": "string",
+      "required": false,
+      "description": "Logo link href"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Optional class name"
+    }
+  ],
+  "description": "Brand logo text lockup used in header and footer.",
+  "hash": "c8416f9dd9f62c67",
+  "action": "existing"
+}

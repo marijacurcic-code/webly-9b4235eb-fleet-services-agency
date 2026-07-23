@@ -1,0 +1,45 @@
+{
+  "name": "terms",
+  "title": "Terms \u0026 Conditions | Fleet Services Agency",
+  "status": "existing",
+  "type": "page",
+  "path": "/terms",
+  "component": "src/pages/TermsPage.tsx",
+  "layout": "RootLayout",
+  "showHeader": true,
+  "showFooter": true,
+  "inHeaderNav": false,
+  "inFooterNav": true,
+  "navLabel": "Terms of Use",
+  "navOrder": 6,
+  "sections": [
+    {
+      "component": "TextProseSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "prose"
+      ]
+    }
+  ],
+  "sectionContentKeys": {
+    "TextProseSection": "prose"
+  },
+  "hash": "ad0b11836dc0a682",
+  "agentPageDescription": "Terms of use page.",
+  "agentInstructions": "Page purpose: The terms page outlines the website and service usage conditions.\n\nSections:\n- TextProseSection: pure-static. Write concise terms copy with clear section headings and plain-language legal wording.",
+  "seo": {
+    "metaDescription": "",
+    "ogTitle": "",
+    "ogDescription": "",
+    "twitterCard": "summary",
+    "canonicalPath": "/terms",
+    "jsonLd": {
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "values": {}
+    }
+  }
+}

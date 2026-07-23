@@ -1,0 +1,56 @@
+{
+  "name": "ServicesGridSection",
+  "type": "section",
+  "file": "src/components/ServicesGridSection.tsx",
+  "contentKey": "services",
+  "executionLevel": 2,
+  "dependsOn": [
+    "SectionHeading",
+    "ServiceCard"
+  ],
+  "shadcnComponents": [],
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Section title"
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "required": false,
+      "description": "Section subtitle"
+    },
+    {
+      "name": "items",
+      "type": "any[]",
+      "required": true,
+      "description": "Service records"
+    },
+    {
+      "name": "loading",
+      "type": "boolean",
+      "required": false,
+      "description": "Loading state"
+    },
+    {
+      "name": "emptyState",
+      "type": "{ heading?: string; message?: string }",
+      "required": false,
+      "description": "Empty state copy"
+    }
+  ],
+  "description": "Primary services listing section for homepage and services page.",
+  "staticContentKeys": [
+    "title",
+    "subtitle",
+    "emptyState"
+  ],
+  "collectionContentKeys": [
+    "items"
+  ],
+  "dataRole": "list",
+  "hash": "bea3dbf3f2950b4a",
+  "action": "existing"
+}

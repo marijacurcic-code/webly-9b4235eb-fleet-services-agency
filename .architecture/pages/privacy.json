@@ -1,0 +1,45 @@
+{
+  "name": "privacy",
+  "title": "Privacy Policy | Fleet Services Agency",
+  "status": "existing",
+  "type": "page",
+  "path": "/privacy",
+  "component": "src/pages/PrivacyPage.tsx",
+  "layout": "RootLayout",
+  "showHeader": true,
+  "showFooter": true,
+  "inHeaderNav": false,
+  "inFooterNav": true,
+  "navLabel": "Privacy Policy",
+  "navOrder": 5,
+  "sections": [
+    {
+      "component": "TextProseSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "prose"
+      ]
+    }
+  ],
+  "sectionContentKeys": {
+    "TextProseSection": "prose"
+  },
+  "hash": "65990bf2fcddfcf4",
+  "agentPageDescription": "Privacy policy page.",
+  "agentInstructions": "Page purpose: The privacy page explains how visitor information is handled.\n\nSections:\n- TextProseSection: pure-static. Write straightforward policy copy with clear headings and readable paragraphs; keep it legally appropriate and unambiguous.",
+  "seo": {
+    "metaDescription": "",
+    "ogTitle": "",
+    "ogDescription": "",
+    "twitterCard": "summary",
+    "canonicalPath": "/privacy",
+    "jsonLd": {
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "values": {}
+    }
+  }
+}

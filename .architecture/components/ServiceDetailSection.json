@@ -1,0 +1,64 @@
+{
+  "name": "ServiceDetailSection",
+  "type": "section",
+  "file": "src/components/ServiceDetailSection.tsx",
+  "contentKey": "serviceDetail",
+  "executionLevel": 2,
+  "dependsOn": [],
+  "shadcnComponents": [
+    "button"
+  ],
+  "props": [
+    {
+      "name": "item",
+      "type": "any",
+      "required": true,
+      "description": "Current service item"
+    },
+    {
+      "name": "loading",
+      "type": "boolean",
+      "required": false,
+      "description": "Loading state"
+    },
+    {
+      "name": "breadcrumbLabel",
+      "type": "string",
+      "required": false,
+      "description": "Breadcrumb label"
+    },
+    {
+      "name": "ctaText",
+      "type": "string",
+      "required": false,
+      "description": "Contact CTA label"
+    },
+    {
+      "name": "notFoundMessage",
+      "type": "string",
+      "required": false,
+      "description": "Not found fallback message"
+    }
+  ],
+  "description": "Detailed service content section for a single service page.",
+  "staticContentKeys": [
+    "breadcrumbLabel",
+    "ctaText",
+    "notFoundMessage"
+  ],
+  "collectionContentKeys": [
+    "id",
+    "slug",
+    "title",
+    "excerpt",
+    "description",
+    "imageUrl",
+    "imageAlt",
+    "serviceArea",
+    "benefits",
+    "deliverables"
+  ],
+  "dataRole": "item",
+  "hash": "c8be5608f145c077",
+  "action": "existing"
+}

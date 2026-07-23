@@ -1,0 +1,25 @@
+{
+  "name": "SocialLinks",
+  "type": "shared",
+  "file": "src/components/SocialLinks.tsx",
+  "executionLevel": 1,
+  "dependsOn": [],
+  "shadcnComponents": [],
+  "props": [
+    {
+      "name": "socials",
+      "type": "{ platform: string; href: string; label: string }[]",
+      "required": true,
+      "description": "Social link items"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Optional class name"
+    }
+  ],
+  "description": "Footer social icon link list.",
+  "hash": "66f600b9d9390df1",
+  "action": "existing"
+}

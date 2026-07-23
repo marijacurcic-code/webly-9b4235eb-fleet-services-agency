@@ -1,0 +1,37 @@
+{
+  "name": "ProcessStep",
+  "type": "shared",
+  "file": "src/components/ProcessStep.tsx",
+  "executionLevel": 1,
+  "dependsOn": [],
+  "shadcnComponents": [],
+  "props": [
+    {
+      "name": "step",
+      "type": "string",
+      "required": true,
+      "description": "Step number or label"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Step title"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "required": true,
+      "description": "Step description"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Optional class name"
+    }
+  ],
+  "description": "Process step card for how the agency works.",
+  "hash": "30e10b58611d5c13",
+  "action": "existing"
+}

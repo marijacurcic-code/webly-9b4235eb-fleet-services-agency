@@ -1,0 +1,986 @@
+{
+  "googleFonts": [
+    "Montserrat:wght@500;600;700;800",
+    "Open\u002BSans:wght@400;500;600;700"
+  ],
+  "cssBlocks": [
+    {
+      "block": "@theme inline",
+      "properties": [
+        {
+          "name": "--radius-sm",
+          "value": "var(--radius-sm-raw)"
+        },
+        {
+          "name": "--radius-md",
+          "value": "var(--radius-md-raw)"
+        },
+        {
+          "name": "--radius-lg",
+          "value": "var(--radius-lg-raw)"
+        },
+        {
+          "name": "--color-background",
+          "value": "var(--background)"
+        },
+        {
+          "name": "--color-foreground",
+          "value": "var(--foreground)"
+        },
+        {
+          "name": "--color-card",
+          "value": "var(--card)"
+        },
+        {
+          "name": "--color-card-foreground",
+          "value": "var(--card-foreground)"
+        },
+        {
+          "name": "--color-popover",
+          "value": "var(--popover)"
+        },
+        {
+          "name": "--color-popover-foreground",
+          "value": "var(--popover-foreground)"
+        },
+        {
+          "name": "--color-primary",
+          "value": "var(--primary)"
+        },
+        {
+          "name": "--color-primary-foreground",
+          "value": "var(--primary-foreground)"
+        },
+        {
+          "name": "--color-secondary",
+          "value": "var(--secondary)"
+        },
+        {
+          "name": "--color-secondary-foreground",
+          "value": "var(--secondary-foreground)"
+        },
+        {
+          "name": "--color-muted",
+          "value": "var(--muted)"
+        },
+        {
+          "name": "--color-muted-foreground",
+          "value": "var(--muted-foreground)"
+        },
+        {
+          "name": "--color-accent",
+          "value": "var(--accent)"
+        },
+        {
+          "name": "--color-accent-foreground",
+          "value": "var(--accent-foreground)"
+        },
+        {
+          "name": "--color-destructive",
+          "value": "var(--destructive)"
+        },
+        {
+          "name": "--color-destructive-foreground",
+          "value": "var(--destructive-foreground)"
+        },
+        {
+          "name": "--color-border",
+          "value": "var(--border)"
+        },
+        {
+          "name": "--color-input",
+          "value": "var(--input)"
+        },
+        {
+          "name": "--color-ring",
+          "value": "var(--ring)"
+        },
+        {
+          "name": "--color-brand-primary",
+          "value": "var(--brand-primary)"
+        },
+        {
+          "name": "--color-brand-secondary",
+          "value": "var(--brand-secondary)"
+        },
+        {
+          "name": "--color-brand-accent",
+          "value": "var(--brand-accent)"
+        },
+        {
+          "name": "--color-brand-bg",
+          "value": "var(--brand-bg)"
+        },
+        {
+          "name": "--color-brand-surface",
+          "value": "var(--brand-surface)"
+        },
+        {
+          "name": "--color-brand-text",
+          "value": "var(--brand-text)"
+        },
+        {
+          "name": "--color-brand-muted",
+          "value": "var(--brand-muted)"
+        },
+        {
+          "name": "--color-brand-border",
+          "value": "var(--brand-border)"
+        },
+        {
+          "name": "--color-brand-border-strong",
+          "value": "var(--brand-border-strong)"
+        },
+        {
+          "name": "--color-brand-overlay",
+          "value": "var(--brand-overlay)"
+        },
+        {
+          "name": "--color-brand-primary-tint",
+          "value": "var(--brand-primary-tint)"
+        },
+        {
+          "name": "--color-brand-primary-fg",
+          "value": "var(--brand-primary-fg)"
+        },
+        {
+          "name": "--color-brand-primary-hover",
+          "value": "var(--brand-primary-hover)"
+        },
+        {
+          "name": "--font-display",
+          "value": "var(--font-display)"
+        },
+        {
+          "name": "--font-sans",
+          "value": "var(--font-sans)"
+        }
+      ]
+    },
+    {
+      "block": ":root",
+      "properties": [
+        {
+          "name": "--radius",
+          "value": "6px"
+        },
+        {
+          "name": "--radius-sm-raw",
+          "value": "2px"
+        },
+        {
+          "name": "--radius-md-raw",
+          "value": "4px"
+        },
+        {
+          "name": "--radius-lg-raw",
+          "value": "8px"
+        },
+        {
+          "name": "--background",
+          "value": "oklch(0.975 0.010 92)"
+        },
+        {
+          "name": "--foreground",
+          "value": "oklch(0.185 0.020 255)"
+        },
+        {
+          "name": "--card",
+          "value": "oklch(1 0 0)"
+        },
+        {
+          "name": "--card-foreground",
+          "value": "oklch(0.185 0.020 255)"
+        },
+        {
+          "name": "--popover",
+          "value": "oklch(1 0 0)"
+        },
+        {
+          "name": "--popover-foreground",
+          "value": "oklch(0.185 0.020 255)"
+        },
+        {
+          "name": "--primary",
+          "value": "oklch(0.235 0.030 255)"
+        },
+        {
+          "name": "--primary-foreground",
+          "value": "oklch(0.985 0.006 95)"
+        },
+        {
+          "name": "--secondary",
+          "value": "oklch(0.940 0.012 92)"
+        },
+        {
+          "name": "--secondary-foreground",
+          "value": "oklch(0.205 0.020 255)"
+        },
+        {
+          "name": "--muted",
+          "value": "oklch(0.945 0.010 92)"
+        },
+        {
+          "name": "--muted-foreground",
+          "value": "oklch(0.500 0.018 255)"
+        },
+        {
+          "name": "--accent",
+          "value": "oklch(0.740 0.155 78)"
+        },
+        {
+          "name": "--accent-foreground",
+          "value": "oklch(0.160 0.018 70)"
+        },
+        {
+          "name": "--destructive",
+          "value": "oklch(0.575 0.205 28)"
+        },
+        {
+          "name": "--destructive-foreground",
+          "value": "oklch(0.985 0 0)"
+        },
+        {
+          "name": "--border",
+          "value": "oklch(0.885 0.012 92)"
+        },
+        {
+          "name": "--input",
+          "value": "oklch(0.885 0.012 92)"
+        },
+        {
+          "name": "--ring",
+          "value": "oklch(0.740 0.155 78)"
+        },
+        {
+          "name": "--brand-primary",
+          "value": "oklch(0.235 0.030 255)"
+        },
+        {
+          "name": "--brand-secondary",
+          "value": "oklch(0.520 0.070 240)"
+        },
+        {
+          "name": "--brand-accent",
+          "value": "oklch(0.740 0.155 78)"
+        },
+        {
+          "name": "--brand-bg",
+          "value": "oklch(0.975 0.010 92)"
+        },
+        {
+          "name": "--brand-surface",
+          "value": "oklch(1 0 0)"
+        },
+        {
+          "name": "--brand-text",
+          "value": "oklch(0.185 0.020 255)"
+        },
+        {
+          "name": "--brand-muted",
+          "value": "oklch(0.500 0.018 255)"
+        },
+        {
+          "name": "--brand-border",
+          "value": "oklch(0.885 0.012 92)"
+        },
+        {
+          "name": "--brand-border-strong",
+          "value": "oklch(0.660 0.020 255)"
+        },
+        {
+          "name": "--brand-overlay",
+          "value": "oklch(0 0 0 / 0.55)"
+        },
+        {
+          "name": "--brand-primary-tint",
+          "value": "oklch(0.235 0.030 255 / 0.10)"
+        },
+        {
+          "name": "--brand-primary-fg",
+          "value": "oklch(0.985 0.006 95)"
+        },
+        {
+          "name": "--brand-primary-hover",
+          "value": "oklch(0.195 0.030 255)"
+        },
+        {
+          "name": "--gradient-hero",
+          "value": "linear-gradient(135deg, oklch(0.170 0.020 255) 0%, oklch(0.115 0.016 255) 55%, oklch(0.740 0.155 78 / 0.22) 100%)"
+        },
+        {
+          "name": "--gradient-cta",
+          "value": "linear-gradient(90deg, oklch(0.235 0.030 255) 0%, oklch(0.520 0.070 240) 60%, oklch(0.740 0.155 78) 120%)"
+        },
+        {
+          "name": "--gradient-surface",
+          "value": "linear-gradient(180deg, oklch(1 0 0) 0%, oklch(0.975 0.010 92) 100%)"
+        },
+        {
+          "name": "--shadow-sm",
+          "value": "0 1px 2px rgba(15, 23, 42, 0.06), 0 1px 1px rgba(15, 23, 42, 0.04)"
+        },
+        {
+          "name": "--shadow-md",
+          "value": "0 8px 18px rgba(15, 23, 42, 0.10), 0 2px 6px rgba(15, 23, 42, 0.06)"
+        },
+        {
+          "name": "--shadow-lg",
+          "value": "0 18px 40px rgba(15, 23, 42, 0.14), 0 6px 16px rgba(15, 23, 42, 0.08)"
+        },
+        {
+          "name": "--transition-fast",
+          "value": "150ms ease"
+        },
+        {
+          "name": "--transition-base",
+          "value": "250ms ease"
+        },
+        {
+          "name": "--transition-slow",
+          "value": "400ms ease"
+        },
+        {
+          "name": "--font-display",
+          "value": "\u0027Montserrat\u0027, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, \u0027Apple Color Emoji\u0027, \u0027Segoe UI Emoji\u0027\u056B\u0580"
+        },
+        {
+          "name": "--font-sans",
+          "value": "\u0027Open Sans\u0027, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, \u0027Apple Color Emoji\u0027, \u0027Segoe UI Emoji\u0027"
+        },
+        {
+          "name": "--font-size-display",
+          "value": "clamp(2.75rem, 5.5vw, 4.75rem)"
+        },
+        {
+          "name": "--font-size-h1",
+          "value": "clamp(2.25rem, 4vw, 3.25rem)"
+        },
+        {
+          "name": "--font-size-h2",
+          "value": "clamp(1.75rem, 2.5vw, 2.25rem)"
+        },
+        {
+          "name": "--font-size-h3",
+          "value": "1.375rem"
+        },
+        {
+          "name": "--font-size-body",
+          "value": "1.0625rem"
+        },
+        {
+          "name": "--font-size-small",
+          "value": "0.875rem"
+        },
+        {
+          "name": "--leading-display",
+          "value": "1.05"
+        },
+        {
+          "name": "--leading-tight",
+          "value": "1.18"
+        },
+        {
+          "name": "--leading-body",
+          "value": "1.65"
+        },
+        {
+          "name": "--tracking-display",
+          "value": "-0.025em"
+        },
+        {
+          "name": "--tracking-eyebrow",
+          "value": "0.16em"
+        },
+        {
+          "name": "--eyebrow-size",
+          "value": "0.6875rem"
+        },
+        {
+          "name": "--eyebrow-color",
+          "value": "oklch(0.740 0.155 78)"
+        },
+        {
+          "name": "--spacing-section",
+          "value": "5.5rem"
+        },
+        {
+          "name": "--spacing-section-hero",
+          "value": "7rem"
+        },
+        {
+          "name": "--max-w-content",
+          "value": "72rem"
+        },
+        {
+          "name": "--max-w-prose",
+          "value": "42rem"
+        }
+      ]
+    },
+    {
+      "block": ".dark",
+      "properties": [
+        {
+          "name": "--background",
+          "value": "oklch(0.120 0.014 255)"
+        },
+        {
+          "name": "--foreground",
+          "value": "oklch(0.965 0.010 95)"
+        },
+        {
+          "name": "--card",
+          "value": "oklch(0.160 0.016 255)"
+        },
+        {
+          "name": "--card-foreground",
+          "value": "oklch(0.965 0.010 95)"
+        },
+        {
+          "name": "--popover",
+          "value": "oklch(0.160 0.016 255)"
+        },
+        {
+          "name": "--popover-foreground",
+          "value": "oklch(0.965 0.010 95)"
+        },
+        {
+          "name": "--primary",
+          "value": "oklch(0.740 0.155 78)"
+        },
+        {
+          "name": "--primary-foreground",
+          "value": "oklch(0.130 0.012 255)"
+        },
+        {
+          "name": "--secondary",
+          "value": "oklch(0.220 0.020 255)"
+        },
+        {
+          "name": "--secondary-foreground",
+          "value": "oklch(0.965 0.010 95)"
+        },
+        {
+          "name": "--muted",
+          "value": "oklch(0.205 0.018 255)"
+        },
+        {
+          "name": "--muted-foreground",
+          "value": "oklch(0.750 0.020 255)"
+        },
+        {
+          "name": "--accent",
+          "value": "oklch(0.740 0.155 78)"
+        },
+        {
+          "name": "--accent-foreground",
+          "value": "oklch(0.130 0.012 255)"
+        },
+        {
+          "name": "--destructive",
+          "value": "oklch(0.620 0.210 28)"
+        },
+        {
+          "name": "--destructive-foreground",
+          "value": "oklch(0.985 0 0)"
+        },
+        {
+          "name": "--border",
+          "value": "oklch(0.260 0.018 255)"
+        },
+        {
+          "name": "--input",
+          "value": "oklch(0.260 0.018 255)"
+        },
+        {
+          "name": "--ring",
+          "value": "oklch(0.740 0.155 78)"
+        },
+        {
+          "name": "--brand-bg",
+          "value": "oklch(0.120 0.014 255)"
+        },
+        {
+          "name": "--brand-surface",
+          "value": "oklch(0.160 0.016 255)"
+        },
+        {
+          "name": "--brand-text",
+          "value": "oklch(0.965 0.010 95)"
+        },
+        {
+          "name": "--brand-muted",
+          "value": "oklch(0.750 0.020 255)"
+        },
+        {
+          "name": "--brand-border",
+          "value": "oklch(0.260 0.018 255)"
+        },
+        {
+          "name": "--brand-border-strong",
+          "value": "oklch(0.520 0.020 255)"
+        },
+        {
+          "name": "--brand-overlay",
+          "value": "oklch(0 0 0 / 0.70)"
+        },
+        {
+          "name": "--brand-primary",
+          "value": "oklch(0.740 0.155 78)"
+        },
+        {
+          "name": "--brand-primary-fg",
+          "value": "oklch(0.130 0.012 255)"
+        },
+        {
+          "name": "--brand-primary-hover",
+          "value": "oklch(0.790 0.145 78)"
+        },
+        {
+          "name": "--brand-primary-tint",
+          "value": "oklch(0.740 0.155 78 / 0.14)"
+        }
+      ]
+    },
+    {
+      "block": "@layer base",
+      "rules": [
+        {
+          "selector": "*",
+          "properties": [
+            {
+              "name": "border-color",
+              "value": "var(--color-border)"
+            }
+          ]
+        },
+        {
+          "selector": "html",
+          "properties": [
+            {
+              "name": "scroll-behavior",
+              "value": "smooth"
+            }
+          ]
+        },
+        {
+          "selector": "body",
+          "properties": [
+            {
+              "name": "background-color",
+              "value": "var(--color-background)"
+            },
+            {
+              "name": "color",
+              "value": "var(--color-foreground)"
+            },
+            {
+              "name": "font-family",
+              "value": "var(--font-sans)"
+            },
+            {
+              "name": "font-size",
+              "value": "var(--font-size-body)"
+            },
+            {
+              "name": "line-height",
+              "value": "var(--leading-body)"
+            },
+            {
+              "name": "-webkit-font-smoothing",
+              "value": "antialiased"
+            },
+            {
+              "name": "-moz-osx-font-smoothing",
+              "value": "grayscale"
+            },
+            {
+              "name": "text-rendering",
+              "value": "optimizeLegibility"
+            }
+          ]
+        },
+        {
+          "selector": "h1, h2, h3, h4, .font-display",
+          "properties": [
+            {
+              "name": "font-family",
+              "value": "var(--font-display)"
+            },
+            {
+              "name": "letter-spacing",
+              "value": "var(--tracking-display)"
+            }
+          ]
+        },
+        {
+          "selector": "h1",
+          "properties": [
+            {
+              "name": "font-size",
+              "value": "var(--font-size-h1)"
+            },
+            {
+              "name": "line-height",
+              "value": "var(--leading-display)"
+            },
+            {
+              "name": "font-weight",
+              "value": "800"
+            }
+          ]
+        },
+        {
+          "selector": "h2",
+          "properties": [
+            {
+              "name": "font-size",
+              "value": "var(--font-size-h2)"
+            },
+            {
+              "name": "line-height",
+              "value": "1.15"
+            },
+            {
+              "name": "font-weight",
+              "value": "800"
+            }
+          ]
+        },
+        {
+          "selector": "h3",
+          "properties": [
+            {
+              "name": "font-size",
+              "value": "var(--font-size-h3)"
+            },
+            {
+              "name": "line-height",
+              "value": "1.25"
+            },
+            {
+              "name": "font-weight",
+              "value": "700"
+            }
+          ]
+        },
+        {
+          "selector": "small, .text-small",
+          "properties": [
+            {
+              "name": "font-size",
+              "value": "var(--font-size-small)"
+            }
+          ]
+        },
+        {
+          "selector": ":focus-visible",
+          "properties": [
+            {
+              "name": "outline",
+              "value": "2px solid var(--color-ring)"
+            },
+            {
+              "name": "outline-offset",
+              "value": "2px"
+            }
+          ]
+        },
+        {
+          "selector": "::selection",
+          "properties": [
+            {
+              "name": "background",
+              "value": "oklch(0.740 0.155 78 / 0.35)"
+            },
+            {
+              "name": "color",
+              "value": "var(--color-foreground)"
+            }
+          ]
+        },
+        {
+          "selector": "@media (prefers-reduced-motion: reduce)",
+          "properties": [
+            {
+              "name": "scroll-behavior",
+              "value": "auto"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "block": "@layer utilities",
+      "rules": [
+        {
+          "selector": ".text-balance",
+          "properties": [
+            {
+              "name": "text-wrap",
+              "value": "balance"
+            }
+          ]
+        },
+        {
+          "selector": ".grain",
+          "properties": [
+            {
+              "name": "background-image",
+              "value": "radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1px)"
+            },
+            {
+              "name": "background-size",
+              "value": "3px 3px"
+            }
+          ]
+        },
+        {
+          "selector": ".bg-hero",
+          "properties": [
+            {
+              "name": "background-image",
+              "value": "var(--gradient-hero)"
+            }
+          ]
+        },
+        {
+          "selector": ".bg-cta",
+          "properties": [
+            {
+              "name": "background-image",
+              "value": "var(--gradient-cta)"
+            }
+          ]
+        },
+        {
+          "selector": ".bg-surface-gradient",
+          "properties": [
+            {
+              "name": "background-image",
+              "value": "var(--gradient-surface)"
+            }
+          ]
+        },
+        {
+          "selector": ".shadow-elev-sm",
+          "properties": [
+            {
+              "name": "box-shadow",
+              "value": "var(--shadow-sm)"
+            }
+          ]
+        },
+        {
+          "selector": ".shadow-elev-md",
+          "properties": [
+            {
+              "name": "box-shadow",
+              "value": "var(--shadow-md)"
+            }
+          ]
+        },
+        {
+          "selector": ".shadow-elev-lg",
+          "properties": [
+            {
+              "name": "box-shadow",
+              "value": "var(--shadow-lg)"
+            }
+          ]
+        },
+        {
+          "selector": ".transition-fast",
+          "properties": [
+            {
+              "name": "transition",
+              "value": "var(--transition-fast)"
+            }
+          ]
+        },
+        {
+          "selector": ".transition-base",
+          "properties": [
+            {
+              "name": "transition",
+              "value": "var(--transition-base)"
+            }
+          ]
+        },
+        {
+          "selector": ".transition-slow",
+          "properties": [
+            {
+              "name": "transition",
+              "value": "var(--transition-slow)"
+            }
+          ]
+        },
+        {
+          "selector": ".eyebrow",
+          "properties": [
+            {
+              "name": "font-size",
+              "value": "var(--eyebrow-size)"
+            },
+            {
+              "name": "letter-spacing",
+              "value": "var(--tracking-eyebrow)"
+            },
+            {
+              "name": "text-transform",
+              "value": "uppercase"
+            },
+            {
+              "name": "font-weight",
+              "value": "700"
+            },
+            {
+              "name": "color",
+              "value": "var(--eyebrow-color)"
+            }
+          ]
+        },
+        {
+          "selector": ".container-content",
+          "properties": [
+            {
+              "name": "max-width",
+              "value": "var(--max-w-content)"
+            },
+            {
+              "name": "margin-inline",
+              "value": "auto"
+            },
+            {
+              "name": "padding-inline",
+              "value": "1.25rem"
+            }
+          ]
+        },
+        {
+          "selector": "@media (min-width: 768px) { .container-content }",
+          "properties": [
+            {
+              "name": "padding-inline",
+              "value": "2rem"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "block": "@layer components",
+      "rules": [
+        {
+          "selector": ".prose-shell",
+          "properties": [
+            {
+              "name": "max-width",
+              "value": "var(--max-w-prose)"
+            },
+            {
+              "name": "margin-inline",
+              "value": "auto"
+            }
+          ]
+        },
+        {
+          "selector": ".prose-shell p",
+          "properties": [
+            {
+              "name": "color",
+              "value": "var(--color-foreground)"
+            },
+            {
+              "name": "opacity",
+              "value": "0.92"
+            }
+          ]
+        },
+        {
+          "selector": ".prose-shell h2",
+          "properties": [
+            {
+              "name": "margin-top",
+              "value": "2.25rem"
+            }
+          ]
+        },
+        {
+          "selector": ".prose-shell a",
+          "properties": [
+            {
+              "name": "color",
+              "value": "var(--color-brand-secondary)"
+            },
+            {
+              "name": "text-decoration",
+              "value": "underline"
+            },
+            {
+              "name": "text-underline-offset",
+              "value": "3px"
+            },
+            {
+              "name": "text-decoration-thickness",
+              "value": "2px"
+            }
+          ]
+        },
+        {
+          "selector": ".prose-shell a:hover",
+          "properties": [
+            {
+              "name": "color",
+              "value": "var(--color-brand-primary)"
+            }
+          ]
+        },
+        {
+          "selector": ".card-interactive",
+          "properties": [
+            {
+              "name": "background",
+              "value": "var(--color-card)"
+            },
+            {
+              "name": "border",
+              "value": "1px solid var(--color-border)"
+            },
+            {
+              "name": "border-radius",
+              "value": "var(--radius-lg)"
+            },
+            {
+              "name": "box-shadow",
+              "value": "var(--shadow-sm)"
+            },
+            {
+              "name": "transition",
+              "value": "transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base)"
+            }
+          ]
+        },
+        {
+          "selector": ".card-interactive:hover",
+          "properties": [
+            {
+              "name": "transform",
+              "value": "translateY(-2px)"
+            },
+            {
+              "name": "box-shadow",
+              "value": "var(--shadow-md)"
+            },
+            {
+              "name": "border-color",
+              "value": "var(--color-brand-border-strong)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

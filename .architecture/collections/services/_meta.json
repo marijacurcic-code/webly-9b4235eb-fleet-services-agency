@@ -1,0 +1,7 @@
+{
+  "name": "services",
+  "singularName": "service",
+  "listingPage": "services",
+  "detailPage": "service-detail",
+  "itemCount": 6
+}

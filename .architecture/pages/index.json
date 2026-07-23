@@ -1,0 +1,95 @@
+{
+  "name": "index",
+  "title": "Home | Fleet Services Agency",
+  "status": "existing",
+  "type": "homepage",
+  "path": "/",
+  "component": "src/pages/HomePage.tsx",
+  "layout": "RootLayout",
+  "heroMedia": "industrial fleet vehicles parked in a modern business setting",
+  "showHeader": true,
+  "showFooter": true,
+  "inHeaderNav": true,
+  "inFooterNav": true,
+  "navLabel": "Home",
+  "navOrder": 1,
+  "sections": [
+    {
+      "component": "HeroSplitSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "button",
+        "badge"
+      ]
+    },
+    {
+      "component": "BenefitsSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "card",
+        "badge"
+      ]
+    },
+    {
+      "component": "AboutImageSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "card"
+      ]
+    },
+    {
+      "component": "ProcessSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "card",
+        "separator"
+      ]
+    },
+    {
+      "component": "StatsSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "card"
+      ]
+    },
+    {
+      "component": "CtaBannerSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "button",
+        "card"
+      ]
+    }
+  ],
+  "sectionContentKeys": {
+    "HeroSplitSection": "hero",
+    "BenefitsSection": "benefits",
+    "AboutImageSection": "aboutStory",
+    "ProcessSection": "process",
+    "StatsSection": "stats",
+    "CtaBannerSection": "ctaBanner"
+  },
+  "hash": "aca0badb6a5ad206",
+  "agentPageDescription": "The homepage introduces Fleet Services Agency with a confident, business-focused first impression. Visitors quickly understand the company serves fleets and commercial clients, then move toward learning more or getting in touch. Tone: modern, dependable, and practical.",
+  "agentInstructions": "Page purpose: The homepage promotes fleet services to local businesses with a modern industrial feel and clear calls to action.\n\nSections:\n- HeroSplitSection: pure-static. Write a strong business-focused headline, concise supporting copy, and a primary CTA toward services or contact.\n- BenefitsSection: pure-static. Present the main reasons businesses choose the agency; keep the benefits specific to fleet reliability, maintenance, and uptime.\n- AboutImageSection: pure-static. Introduce the company briefly with a credibility-focused paragraph and an image caption or supporting text.\n- ProcessSection: pure-static. Explain the service process in 3\u20134 simple steps; keep it practical and easy to scan.\n- StatsSection: pure-static. Write short metric labels and supporting copy that reinforce trust, scale, and local expertise.\n- CtaBannerSection: pure-static. Add a direct service-led CTA encouraging businesses to request a quote or speak with the team.",
+  "seo": {
+    "metaDescription": "",
+    "ogTitle": "",
+    "ogDescription": "",
+    "twitterCard": "summary_large_image",
+    "canonicalPath": "/",
+    "jsonLd": {
+      "schemaTypes": [
+        "WebSite",
+        "Organization"
+      ],
+      "values": {}
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "SectionHeading",
+  "type": "shared",
+  "file": "src/components/SectionHeading.tsx",
+  "executionLevel": 1,
+  "dependsOn": [],
+  "shadcnComponents": [],
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Section title"
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "required": false,
+      "description": "Optional section subtitle"
+    },
+    {
+      "name": "align",
+      "type": "\u0027left\u0027 | \u0027center\u0027",
+      "required": false,
+      "description": "Text alignment"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Optional wrapper class name"
+    }
+  ],
+  "description": "Reusable section heading block for page sections.",
+  "hash": "a559d3945872f0be",
+  "action": "existing"
+}
