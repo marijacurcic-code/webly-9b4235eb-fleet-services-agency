@@ -1,0 +1,51 @@
+{
+  "name": "AboutImageSection",
+  "type": "section",
+  "file": "src/components/AboutImageSection.tsx",
+  "contentKey": "aboutStory",
+  "executionLevel": 2,
+  "dependsOn": [
+    "SectionHeading"
+  ],
+  "shadcnComponents": [],
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Section title"
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "required": false,
+      "description": "Section subtitle"
+    },
+    {
+      "name": "body",
+      "type": "string[]",
+      "required": true,
+      "description": "Paragraph content"
+    }
+  ],
+  "description": "About section with supporting image and company story.",
+  "imageSlots": [
+    {
+      "key": "storyPhoto",
+      "description": "fleet operations team workshop briefing",
+      "alt": "Fleet services team at work",
+      "aspectRatio": "4:3",
+      "usage": "split",
+      "fit": "cover",
+      "position": "center",
+      "orientation": "landscape"
+    }
+  ],
+  "staticContentKeys": [
+    "title",
+    "subtitle",
+    "body"
+  ],
+  "hash": "2a56a70aa940d9ee",
+  "action": "existing"
+}

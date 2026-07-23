@@ -1,0 +1,81 @@
+{
+  "name": "HeroSplitSection",
+  "type": "section",
+  "file": "src/components/HeroSplitSection.tsx",
+  "contentKey": "hero",
+  "executionLevel": 2,
+  "dependsOn": [
+    "SectionHeading"
+  ],
+  "shadcnComponents": [
+    "button"
+  ],
+  "props": [
+    {
+      "name": "eyebrow",
+      "type": "string",
+      "required": false,
+      "description": "Small label above heading"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Hero headline"
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "required": false,
+      "description": "Hero supporting text"
+    },
+    {
+      "name": "primaryCtaLabel",
+      "type": "string",
+      "required": false,
+      "description": "Primary CTA label"
+    },
+    {
+      "name": "primaryCtaHref",
+      "type": "string",
+      "required": false,
+      "description": "Primary CTA href"
+    },
+    {
+      "name": "secondaryCtaLabel",
+      "type": "string",
+      "required": false,
+      "description": "Secondary CTA label"
+    },
+    {
+      "name": "secondaryCtaHref",
+      "type": "string",
+      "required": false,
+      "description": "Secondary CTA href"
+    }
+  ],
+  "description": "Split hero section with industrial service messaging and a supporting image.",
+  "imageSlots": [
+    {
+      "key": "heroImage",
+      "description": "commercial fleet service depot exterior",
+      "alt": "Commercial fleet service operation",
+      "aspectRatio": "4:3",
+      "usage": "split",
+      "fit": "cover",
+      "position": "center",
+      "orientation": "landscape"
+    }
+  ],
+  "staticContentKeys": [
+    "eyebrow",
+    "title",
+    "subtitle",
+    "primaryCtaLabel",
+    "primaryCtaHref",
+    "secondaryCtaLabel",
+    "secondaryCtaHref"
+  ],
+  "hash": "c1873c4b8c3a2e61",
+  "action": "existing"
+}

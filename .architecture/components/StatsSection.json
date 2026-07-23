@@ -1,0 +1,40 @@
+{
+  "name": "StatsSection",
+  "type": "section",
+  "file": "src/components/StatsSection.tsx",
+  "contentKey": "stats",
+  "executionLevel": 2,
+  "dependsOn": [
+    "SectionHeading",
+    "StatItem"
+  ],
+  "shadcnComponents": [],
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Section title"
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "required": false,
+      "description": "Section subtitle"
+    },
+    {
+      "name": "items",
+      "type": "{ value: string; label: string }[]",
+      "required": true,
+      "description": "Stats list"
+    }
+  ],
+  "description": "Trust-building operational metrics section.",
+  "staticContentKeys": [
+    "title",
+    "subtitle",
+    "items"
+  ],
+  "hash": "5c4258a2f613f1e3",
+  "action": "existing"
+}

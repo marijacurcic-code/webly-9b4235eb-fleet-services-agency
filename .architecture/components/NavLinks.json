@@ -1,0 +1,31 @@
+{
+  "name": "NavLinks",
+  "type": "shared",
+  "file": "src/components/NavLinks.tsx",
+  "executionLevel": 1,
+  "dependsOn": [],
+  "shadcnComponents": [],
+  "props": [
+    {
+      "name": "links",
+      "type": "{ label: string; href: string }[]",
+      "required": true,
+      "description": "Navigation links"
+    },
+    {
+      "name": "orientation",
+      "type": "\u0027horizontal\u0027 | \u0027vertical\u0027",
+      "required": false,
+      "description": "Link layout orientation"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Optional class name"
+    }
+  ],
+  "description": "Reusable navigation link list.",
+  "hash": "327e362bc06687ce",
+  "action": "existing"
+}

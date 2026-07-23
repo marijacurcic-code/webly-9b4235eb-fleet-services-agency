@@ -1,0 +1,1820 @@
+{
+  "project": {
+    "name": "Fleet Services Agency",
+    "displayName": "Fleet Services Agency",
+    "description": "Fleet Services Agency helps businesses manage and maintain company vehicle fleets with practical, reliable service solutions. The site is designed to promote local B2B services with a modern industrial look and a clear path to contact.",
+    "favicon": "minimalist industrial letter F logo mark with earthy tones on a dark background"
+  },
+  "site": {
+    "header": {
+      "brand": "Fleet Services Agency",
+      "navLinks": []
+    },
+    "footer": {
+      "brand": "Fleet Services Agency",
+      "tagline": "Reliable fleet support for business",
+      "copyright": "\u00A9 2026 Fleet Services Agency. All rights reserved.",
+      "navLinks": [],
+      "socials": []
+    }
+  },
+  "components": [
+    {
+      "name": "SectionHeading",
+      "type": "shared",
+      "file": "src/components/SectionHeading.tsx",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [],
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Section title"
+        },
+        {
+          "name": "subtitle",
+          "type": "string",
+          "required": false,
+          "description": "Optional section subtitle"
+        },
+        {
+          "name": "align",
+          "type": "\u0027left\u0027 | \u0027center\u0027",
+          "required": false,
+          "description": "Text alignment"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": "Optional wrapper class name"
+        }
+      ],
+      "description": "Reusable section heading block for page sections.",
+      "hash": "a559d3945872f0be"
+    },
+    {
+      "name": "BenefitItem",
+      "type": "shared",
+      "file": "src/components/BenefitItem.tsx",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [],
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Benefit title"
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": true,
+          "description": "Benefit description"
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "required": false,
+          "description": "Lucide icon name"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": "Optional class name"
+        }
+      ],
+      "description": "Compact benefit item for service advantages.",
+      "hash": "e0c39ce02fa0b68f"
+    },
+    {
+      "name": "ProcessStep",
+      "type": "shared",
+      "file": "src/components/ProcessStep.tsx",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [],
+      "props": [
+        {
+          "name": "step",
+          "type": "string",
+          "required": true,
+          "description": "Step number or label"
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Step title"
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": true,
+          "description": "Step description"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": "Optional class name"
+        }
+      ],
+      "description": "Process step card for how the agency works.",
+      "hash": "30e10b58611d5c13"
+    },
+    {
+      "name": "StatItem",
+      "type": "shared",
+      "file": "src/components/StatItem.tsx",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [],
+      "props": [
+        {
+          "name": "value",
+          "type": "string",
+          "required": true,
+          "description": "Stat value"
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "required": true,
+          "description": "Stat label"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": "Optional class name"
+        }
+      ],
+      "description": "Single stat display item.",
+      "hash": "05f0b0f9a820f7ea"
+    },
+    {
+      "name": "TimelineItem",
+      "type": "shared",
+      "file": "src/components/TimelineItem.tsx",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [],
+      "props": [
+        {
+          "name": "year",
+          "type": "string",
+          "required": true,
+          "description": "Timeline marker"
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Milestone title"
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": true,
+          "description": "Milestone description"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": "Optional class name"
+        }
+      ],
+      "description": "Timeline milestone item for company story.",
+      "hash": "212a438508303e2f"
+    },
+    {
+      "name": "ServiceCard",
+      "type": "shared",
+      "file": "src/components/ServiceCard.tsx",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "card",
+        "button"
+      ],
+      "props": [
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "description": "Service record id"
+        },
+        {
+          "name": "slug",
+          "type": "string",
+          "required": false,
+          "description": "Service slug"
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Service title"
+        },
+        {
+          "name": "excerpt",
+          "type": "string",
+          "required": false,
+          "description": "Short service summary"
+        },
+        {
+          "name": "imageUrl",
+          "type": "string",
+          "required": false,
+          "description": "Service image URL"
+        },
+        {
+          "name": "imageAlt",
+          "type": "string",
+          "required": false,
+          "description": "Service image alt text"
+        },
+        {
+          "name": "serviceArea",
+          "type": "string",
+          "required": false,
+          "description": "Primary service area"
+        },
+        {
+          "name": "href",
+          "type": "string",
+          "required": false,
+          "description": "Optional service link"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": "Optional class name"
+        }
+      ],
+      "description": "Service listing card used across homepage and service pages.",
+      "hash": "a3fa8e401251b210"
+    },
+    {
+      "name": "BrandLogo",
+      "type": "shared",
+      "file": "src/components/BrandLogo.tsx",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [],
+      "props": [
+        {
+          "name": "name",
+          "type": "string",
+          "required": true,
+          "description": "Brand name"
+        },
+        {
+          "name": "href",
+          "type": "string",
+          "required": false,
+          "description": "Logo link href"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": "Optional class name"
+        }
+      ],
+      "description": "Brand logo text lockup used in header and footer.",
+      "hash": "c8416f9dd9f62c67"
+    },
+    {
+      "name": "NavLinks",
+      "type": "shared",
+      "file": "src/components/NavLinks.tsx",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [],
+      "props": [
+        {
+          "name": "links",
+          "type": "{ label: string; href: string }[]",
+          "required": true,
+          "description": "Navigation links"
+        },
+        {
+          "name": "orientation",
+          "type": "\u0027horizontal\u0027 | \u0027vertical\u0027",
+          "required": false,
+          "description": "Link layout orientation"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": "Optional class name"
+        }
+      ],
+      "description": "Reusable navigation link list.",
+      "hash": "327e362bc06687ce"
+    },
+    {
+      "name": "SocialLinks",
+      "type": "shared",
+      "file": "src/components/SocialLinks.tsx",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [],
+      "props": [
+        {
+          "name": "socials",
+          "type": "{ platform: string; href: string; label: string }[]",
+          "required": true,
+          "description": "Social link items"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": "Optional class name"
+        }
+      ],
+      "description": "Footer social icon link list.",
+      "hash": "66f600b9d9390df1"
+    },
+    {
+      "name": "MobileMenuToggle",
+      "type": "shared",
+      "file": "src/components/MobileMenuToggle.tsx",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "button"
+      ],
+      "props": [
+        {
+          "name": "open",
+          "type": "boolean",
+          "required": true,
+          "description": "Mobile menu open state"
+        },
+        {
+          "name": "onToggle",
+          "type": "() =\u003E void",
+          "required": true,
+          "description": "Toggle handler"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": "Optional class name"
+        }
+      ],
+      "description": "Mobile navigation toggle button.",
+      "hash": "6499bf9d911a62d0"
+    },
+    {
+      "name": "FooterNav",
+      "type": "shared",
+      "file": "src/components/FooterNav.tsx",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [],
+      "props": [
+        {
+          "name": "links",
+          "type": "{ label: string; href: string }[]",
+          "required": true,
+          "description": "Footer navigation links"
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "description": "Optional class name"
+        }
+      ],
+      "description": "Minimal footer navigation list.",
+      "hash": "aafdb9ea3f7b4dd4"
+    },
+    {
+      "name": "HeroSplitSection",
+      "type": "section",
+      "file": "src/components/HeroSplitSection.tsx",
+      "contentKey": "hero",
+      "executionLevel": 2,
+      "dependsOn": [
+        "SectionHeading"
+      ],
+      "shadcnComponents": [
+        "button"
+      ],
+      "props": [
+        {
+          "name": "eyebrow",
+          "type": "string",
+          "required": false,
+          "description": "Small label above heading"
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Hero headline"
+        },
+        {
+          "name": "subtitle",
+          "type": "string",
+          "required": false,
+          "description": "Hero supporting text"
+        },
+        {
+          "name": "primaryCtaLabel",
+          "type": "string",
+          "required": false,
+          "description": "Primary CTA label"
+        },
+        {
+          "name": "primaryCtaHref",
+          "type": "string",
+          "required": false,
+          "description": "Primary CTA href"
+        },
+        {
+          "name": "secondaryCtaLabel",
+          "type": "string",
+          "required": false,
+          "description": "Secondary CTA label"
+        },
+        {
+          "name": "secondaryCtaHref",
+          "type": "string",
+          "required": false,
+          "description": "Secondary CTA href"
+        }
+      ],
+      "description": "Split hero section with industrial service messaging and a supporting image.",
+      "imageSlots": [
+        {
+          "key": "heroImage",
+          "description": "commercial fleet service depot exterior",
+          "alt": "Commercial fleet service operation",
+          "aspectRatio": "4:3",
+          "usage": "split",
+          "fit": "cover",
+          "position": "center",
+          "orientation": "landscape"
+        }
+      ],
+      "staticContentKeys": [
+        "eyebrow",
+        "title",
+        "subtitle",
+        "primaryCtaLabel",
+        "primaryCtaHref",
+        "secondaryCtaLabel",
+        "secondaryCtaHref"
+      ],
+      "hash": "c1873c4b8c3a2e61"
+    },
+    {
+      "name": "BenefitsSection",
+      "type": "section",
+      "file": "src/components/BenefitsSection.tsx",
+      "contentKey": "benefits",
+      "executionLevel": 2,
+      "dependsOn": [
+        "SectionHeading",
+        "BenefitItem"
+      ],
+      "shadcnComponents": [],
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Section title"
+        },
+        {
+          "name": "subtitle",
+          "type": "string",
+          "required": false,
+          "description": "Section subtitle"
+        },
+        {
+          "name": "items",
+          "type": "{ title: string; description: string; icon?: string }[]",
+          "required": true,
+          "description": "Benefit items"
+        }
+      ],
+      "description": "Why-choose-us benefits section for B2B fleet services.",
+      "staticContentKeys": [
+        "title",
+        "subtitle",
+        "items"
+      ],
+      "hash": "fe93295e46ae0c26"
+    },
+    {
+      "name": "ProcessSection",
+      "type": "section",
+      "file": "src/components/ProcessSection.tsx",
+      "contentKey": "process",
+      "executionLevel": 2,
+      "dependsOn": [
+        "SectionHeading",
+        "ProcessStep"
+      ],
+      "shadcnComponents": [
+        "card"
+      ],
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Section title"
+        },
+        {
+          "name": "subtitle",
+          "type": "string",
+          "required": false,
+          "description": "Section subtitle"
+        },
+        {
+          "name": "steps",
+          "type": "{ step: string; title: string; description: string }[]",
+          "required": true,
+          "description": "Process steps"
+        }
+      ],
+      "description": "Step-by-step process explaining service delivery for business clients.",
+      "staticContentKeys": [
+        "title",
+        "subtitle",
+        "steps"
+      ],
+      "hash": "74b05a5fa5178eee"
+    },
+    {
+      "name": "StatsSection",
+      "type": "section",
+      "file": "src/components/StatsSection.tsx",
+      "contentKey": "stats",
+      "executionLevel": 2,
+      "dependsOn": [
+        "SectionHeading",
+        "StatItem"
+      ],
+      "shadcnComponents": [],
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Section title"
+        },
+        {
+          "name": "subtitle",
+          "type": "string",
+          "required": false,
+          "description": "Section subtitle"
+        },
+        {
+          "name": "items",
+          "type": "{ value: string; label: string }[]",
+          "required": true,
+          "description": "Stats list"
+        }
+      ],
+      "description": "Trust-building operational metrics section.",
+      "staticContentKeys": [
+        "title",
+        "subtitle",
+        "items"
+      ],
+      "hash": "5c4258a2f613f1e3"
+    },
+    {
+      "name": "ServicesGridSection",
+      "type": "section",
+      "file": "src/components/ServicesGridSection.tsx",
+      "contentKey": "services",
+      "executionLevel": 2,
+      "dependsOn": [
+        "SectionHeading",
+        "ServiceCard"
+      ],
+      "shadcnComponents": [],
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Section title"
+        },
+        {
+          "name": "subtitle",
+          "type": "string",
+          "required": false,
+          "description": "Section subtitle"
+        },
+        {
+          "name": "items",
+          "type": "any[]",
+          "required": true,
+          "description": "Service records"
+        },
+        {
+          "name": "loading",
+          "type": "boolean",
+          "required": false,
+          "description": "Loading state"
+        },
+        {
+          "name": "emptyState",
+          "type": "{ heading?: string; message?: string }",
+          "required": false,
+          "description": "Empty state copy"
+        }
+      ],
+      "description": "Primary services listing section for homepage and services page.",
+      "staticContentKeys": [
+        "title",
+        "subtitle",
+        "emptyState"
+      ],
+      "collectionContentKeys": [
+        "items"
+      ],
+      "dataRole": "list",
+      "hash": "bea3dbf3f2950b4a"
+    },
+    {
+      "name": "AboutImageSection",
+      "type": "section",
+      "file": "src/components/AboutImageSection.tsx",
+      "contentKey": "aboutStory",
+      "executionLevel": 2,
+      "dependsOn": [
+        "SectionHeading"
+      ],
+      "shadcnComponents": [],
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Section title"
+        },
+        {
+          "name": "subtitle",
+          "type": "string",
+          "required": false,
+          "description": "Section subtitle"
+        },
+        {
+          "name": "body",
+          "type": "string[]",
+          "required": true,
+          "description": "Paragraph content"
+        }
+      ],
+      "description": "About section with supporting image and company story.",
+      "imageSlots": [
+        {
+          "key": "storyPhoto",
+          "description": "fleet operations team workshop briefing",
+          "alt": "Fleet services team at work",
+          "aspectRatio": "4:3",
+          "usage": "split",
+          "fit": "cover",
+          "position": "center",
+          "orientation": "landscape"
+        }
+      ],
+      "staticContentKeys": [
+        "title",
+        "subtitle",
+        "body"
+      ],
+      "hash": "2a56a70aa940d9ee"
+    },
+    {
+      "name": "TimelineSection",
+      "type": "section",
+      "file": "src/components/TimelineSection.tsx",
+      "contentKey": "timeline",
+      "executionLevel": 2,
+      "dependsOn": [
+        "SectionHeading",
+        "TimelineItem"
+      ],
+      "shadcnComponents": [
+        "card"
+      ],
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Section title"
+        },
+        {
+          "name": "subtitle",
+          "type": "string",
+          "required": false,
+          "description": "Section subtitle"
+        },
+        {
+          "name": "items",
+          "type": "{ year: string; title: string; description: string }[]",
+          "required": true,
+          "description": "Timeline items"
+        }
+      ],
+      "description": "Company history and milestones timeline.",
+      "staticContentKeys": [
+        "title",
+        "subtitle",
+        "items"
+      ],
+      "hash": "1d0a277c8f6aa8c5"
+    },
+    {
+      "name": "ServiceDetailSection",
+      "type": "section",
+      "file": "src/components/ServiceDetailSection.tsx",
+      "contentKey": "serviceDetail",
+      "executionLevel": 2,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "button"
+      ],
+      "props": [
+        {
+          "name": "item",
+          "type": "any",
+          "required": true,
+          "description": "Current service item"
+        },
+        {
+          "name": "loading",
+          "type": "boolean",
+          "required": false,
+          "description": "Loading state"
+        },
+        {
+          "name": "breadcrumbLabel",
+          "type": "string",
+          "required": false,
+          "description": "Breadcrumb label"
+        },
+        {
+          "name": "ctaText",
+          "type": "string",
+          "required": false,
+          "description": "Contact CTA label"
+        },
+        {
+          "name": "notFoundMessage",
+          "type": "string",
+          "required": false,
+          "description": "Not found fallback message"
+        }
+      ],
+      "description": "Detailed service content section for a single service page.",
+      "staticContentKeys": [
+        "breadcrumbLabel",
+        "ctaText",
+        "notFoundMessage"
+      ],
+      "collectionContentKeys": [
+        "id",
+        "slug",
+        "title",
+        "excerpt",
+        "description",
+        "imageUrl",
+        "imageAlt",
+        "serviceArea",
+        "benefits",
+        "deliverables"
+      ],
+      "dataRole": "item",
+      "hash": "c8be5608f145c077"
+    },
+    {
+      "name": "RelatedServicesSection",
+      "type": "section",
+      "file": "src/components/RelatedServicesSection.tsx",
+      "contentKey": "relatedServices",
+      "executionLevel": 2,
+      "dependsOn": [
+        "SectionHeading",
+        "ServiceCard"
+      ],
+      "shadcnComponents": [],
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Section title"
+        },
+        {
+          "name": "subtitle",
+          "type": "string",
+          "required": false,
+          "description": "Section subtitle"
+        },
+        {
+          "name": "items",
+          "type": "any[]",
+          "required": true,
+          "description": "Related services"
+        },
+        {
+          "name": "currentItemId",
+          "type": "string",
+          "required": true,
+          "description": "Current service id"
+        }
+      ],
+      "description": "Related services section shown on service detail pages.",
+      "staticContentKeys": [
+        "title",
+        "subtitle"
+      ],
+      "collectionContentKeys": [
+        "items"
+      ],
+      "dataRole": "related",
+      "hash": "04eb691d5ac7628a"
+    },
+    {
+      "name": "ContactSplitSection",
+      "type": "section",
+      "file": "src/components/ContactSplitSection.tsx",
+      "contentKey": "contact",
+      "executionLevel": 2,
+      "dependsOn": [
+        "SectionHeading"
+      ],
+      "shadcnComponents": [
+        "input",
+        "button",
+        "label",
+        "textarea"
+      ],
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Section title"
+        },
+        {
+          "name": "subtitle",
+          "type": "string",
+          "required": false,
+          "description": "Section subtitle"
+        },
+        {
+          "name": "detailsTitle",
+          "type": "string",
+          "required": false,
+          "description": "Contact details heading"
+        },
+        {
+          "name": "address",
+          "type": "string",
+          "required": false,
+          "description": "Business address"
+        },
+        {
+          "name": "phone",
+          "type": "string",
+          "required": false,
+          "description": "Business phone"
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "required": false,
+          "description": "Business email"
+        },
+        {
+          "name": "hours",
+          "type": "string[]",
+          "required": false,
+          "description": "Business hours lines"
+        },
+        {
+          "name": "submitLabel",
+          "type": "string",
+          "required": false,
+          "description": "Submit button label"
+        },
+        {
+          "name": "successMessage",
+          "type": "string",
+          "required": false,
+          "description": "Success state message"
+        }
+      ],
+      "description": "Split contact section with local business details and inquiry form.",
+      "staticContentKeys": [
+        "title",
+        "subtitle",
+        "detailsTitle",
+        "address",
+        "phone",
+        "email",
+        "hours",
+        "submitLabel",
+        "successMessage"
+      ],
+      "hash": "bfd9180478229ab9"
+    },
+    {
+      "name": "MapSection",
+      "type": "section",
+      "file": "src/components/MapSection.tsx",
+      "contentKey": "map",
+      "executionLevel": 2,
+      "dependsOn": [
+        "SectionHeading"
+      ],
+      "shadcnComponents": [],
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Section title"
+        },
+        {
+          "name": "subtitle",
+          "type": "string",
+          "required": false,
+          "description": "Section subtitle"
+        },
+        {
+          "name": "embedUrl",
+          "type": "string",
+          "required": true,
+          "description": "Map embed URL"
+        }
+      ],
+      "description": "Local visibility map section for contact and SEO relevance.",
+      "staticContentKeys": [
+        "title",
+        "subtitle",
+        "embedUrl"
+      ],
+      "hash": "5b542a9feccda9c8"
+    },
+    {
+      "name": "CtaBannerSection",
+      "type": "section",
+      "file": "src/components/CtaBannerSection.tsx",
+      "contentKey": "ctaBanner",
+      "executionLevel": 2,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "button"
+      ],
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "CTA headline"
+        },
+        {
+          "name": "subtitle",
+          "type": "string",
+          "required": false,
+          "description": "CTA supporting text"
+        },
+        {
+          "name": "ctaLabel",
+          "type": "string",
+          "required": true,
+          "description": "CTA button label"
+        },
+        {
+          "name": "ctaHref",
+          "type": "string",
+          "required": true,
+          "description": "CTA button link"
+        }
+      ],
+      "description": "Full-width industrial-style call-to-action banner.",
+      "staticContentKeys": [
+        "title",
+        "subtitle",
+        "ctaLabel",
+        "ctaHref"
+      ],
+      "hash": "ee7d36dbd8b66c2f"
+    },
+    {
+      "name": "TextProseSection",
+      "type": "section",
+      "file": "src/components/TextProseSection.tsx",
+      "contentKey": "prose",
+      "executionLevel": 2,
+      "dependsOn": [],
+      "shadcnComponents": [],
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Document title"
+        },
+        {
+          "name": "lastUpdated",
+          "type": "string",
+          "required": false,
+          "description": "Optional updated date"
+        },
+        {
+          "name": "sections",
+          "type": "{ heading: string; paragraphs: string[] }[]",
+          "required": true,
+          "description": "Prose content sections"
+        }
+      ],
+      "description": "Long-form legal prose section for privacy and terms pages.",
+      "staticContentKeys": [
+        "title",
+        "lastUpdated",
+        "sections"
+      ],
+      "hash": "f28eba863d8c11e5"
+    },
+    {
+      "name": "Header",
+      "type": "navigation",
+      "file": "src/components/Header.tsx",
+      "executionLevel": 3,
+      "dependsOn": [
+        "BrandLogo",
+        "NavLinks",
+        "MobileMenuToggle"
+      ],
+      "shadcnComponents": [
+        "button",
+        "sheet"
+      ],
+      "props": [
+        {
+          "name": "brand",
+          "type": "string",
+          "required": true,
+          "description": "Brand name"
+        },
+        {
+          "name": "navLinks",
+          "type": "{ label: string; href: string }[]",
+          "required": true,
+          "description": "Top navigation links"
+        }
+      ],
+      "description": "Top navigation bar with responsive mobile menu.",
+      "hash": "93185e6e7f709247"
+    },
+    {
+      "name": "Footer",
+      "type": "navigation",
+      "file": "src/components/Footer.tsx",
+      "executionLevel": 3,
+      "dependsOn": [
+        "BrandLogo",
+        "FooterNav",
+        "SocialLinks"
+      ],
+      "shadcnComponents": [],
+      "props": [
+        {
+          "name": "brand",
+          "type": "string",
+          "required": true,
+          "description": "Brand name"
+        },
+        {
+          "name": "tagline",
+          "type": "string",
+          "required": true,
+          "description": "Footer tagline"
+        },
+        {
+          "name": "copyright",
+          "type": "string",
+          "required": true,
+          "description": "Copyright text"
+        },
+        {
+          "name": "navLinks",
+          "type": "{ label: string; href: string }[]",
+          "required": true,
+          "description": "Footer navigation links"
+        },
+        {
+          "name": "socials",
+          "type": "{ platform: string; href: string; label: string }[]",
+          "required": true,
+          "description": "Social links"
+        }
+      ],
+      "description": "Minimal footer with brand, legal links, and copyright.",
+      "hash": "47fb9b56bac5f55e"
+    }
+  ],
+  "layouts": [
+    {
+      "name": "RootLayout",
+      "file": "src/layouts/RootLayout.tsx",
+      "uses": [
+        "Header",
+        "Footer"
+      ]
+    }
+  ],
+  "shadcnInstall": [
+    "button",
+    "card",
+    "input",
+    "label",
+    "sheet",
+    "textarea"
+  ],
+  "npmDependencies": [],
+  "pages": [
+    {
+      "name": "index",
+      "title": "Home | Fleet Services Agency",
+      "status": "new",
+      "type": "homepage",
+      "path": "/",
+      "component": "src/pages/HomePage.tsx",
+      "layout": "RootLayout",
+      "heroMedia": "industrial fleet vehicles parked in a modern business setting",
+      "showHeader": true,
+      "showFooter": true,
+      "inHeaderNav": true,
+      "inFooterNav": true,
+      "navLabel": "Home",
+      "navOrder": 1,
+      "sections": [
+        {
+          "component": "HeroSplitSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "button",
+            "badge"
+          ]
+        },
+        {
+          "component": "BenefitsSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "card",
+            "badge"
+          ]
+        },
+        {
+          "component": "AboutImageSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "card"
+          ]
+        },
+        {
+          "component": "ProcessSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "card",
+            "separator"
+          ]
+        },
+        {
+          "component": "StatsSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "card"
+          ]
+        },
+        {
+          "component": "CtaBannerSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "button",
+            "card"
+          ]
+        }
+      ],
+      "sectionContentKeys": {
+        "HeroSplitSection": "hero",
+        "BenefitsSection": "benefits",
+        "AboutImageSection": "aboutStory",
+        "ProcessSection": "process",
+        "StatsSection": "stats",
+        "CtaBannerSection": "ctaBanner"
+      },
+      "hash": "aca0badb6a5ad206",
+      "agentPageDescription": "The homepage introduces Fleet Services Agency with a confident, business-focused first impression. Visitors quickly understand the company serves fleets and commercial clients, then move toward learning more or getting in touch. Tone: modern, dependable, and practical.",
+      "agentInstructions": "Page purpose: The homepage promotes fleet services to local businesses with a modern industrial feel and clear calls to action.\n\nSections:\n- HeroSplitSection: pure-static. Write a strong business-focused headline, concise supporting copy, and a primary CTA toward services or contact.\n- BenefitsSection: pure-static. Present the main reasons businesses choose the agency; keep the benefits specific to fleet reliability, maintenance, and uptime.\n- AboutImageSection: pure-static. Introduce the company briefly with a credibility-focused paragraph and an image caption or supporting text.\n- ProcessSection: pure-static. Explain the service process in 3\u20134 simple steps; keep it practical and easy to scan.\n- StatsSection: pure-static. Write short metric labels and supporting copy that reinforce trust, scale, and local expertise.\n- CtaBannerSection: pure-static. Add a direct service-led CTA encouraging businesses to request a quote or speak with the team.",
+      "seo": {
+        "metaDescription": "",
+        "ogTitle": "",
+        "ogDescription": "",
+        "twitterCard": "summary_large_image",
+        "canonicalPath": "/",
+        "jsonLd": {
+          "schemaTypes": [
+            "WebSite",
+            "Organization"
+          ],
+          "values": {}
+        }
+      }
+    },
+    {
+      "name": "about",
+      "title": "About | Fleet Services Agency",
+      "status": "new",
+      "type": "page",
+      "path": "/about",
+      "component": "src/pages/AboutPage.tsx",
+      "layout": "RootLayout",
+      "heroMedia": "subtle workshop or fleet operations imagery",
+      "showHeader": true,
+      "showFooter": true,
+      "inHeaderNav": true,
+      "inFooterNav": true,
+      "navLabel": "About",
+      "navOrder": 2,
+      "sections": [
+        {
+          "component": "HeroSplitSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "button"
+          ]
+        },
+        {
+          "component": "AboutImageSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "card"
+          ]
+        },
+        {
+          "component": "BenefitsSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "card",
+            "badge"
+          ]
+        },
+        {
+          "component": "ProcessSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "card",
+            "separator"
+          ]
+        },
+        {
+          "component": "StatsSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "card"
+          ]
+        },
+        {
+          "component": "CtaBannerSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "button",
+            "card"
+          ]
+        }
+      ],
+      "sectionContentKeys": {
+        "HeroSplitSection": "hero",
+        "AboutImageSection": "aboutStory",
+        "BenefitsSection": "benefits",
+        "ProcessSection": "process",
+        "StatsSection": "stats",
+        "CtaBannerSection": "ctaBanner"
+      },
+      "hash": "4d95acb20888305a",
+      "agentPageDescription": "The About page builds credibility by explaining who the agency is, how it works, and what it values. It reassures business visitors that they are dealing with a capable, long-term partner. Tone: grounded, professional, and trustworthy.",
+      "agentInstructions": "Page purpose: The about page tells the company story, builds trust, and explains the agency\u2019s approach to fleet services.\n\nSections:\n- HeroSplitSection: pure-static. Write an authoritative about-page headline and a short brand story subheadline.\n- AboutImageSection: pure-static. Use this section to communicate values, team focus, or operational credibility; do not add unrelated marketing content.\n- BenefitsSection: pure-static. Describe the company\u2019s strengths, service standards, and reliability promise.\n- ProcessSection: pure-static. Explain how the team works with business clients from initial contact through ongoing support.\n- StatsSection: pure-static. Include credibility metrics, years in business, or service-area indicators in concise copy.\n- CtaBannerSection: pure-static. Close with a simple CTA to contact the agency or review services.",
+      "seo": {
+        "metaDescription": "",
+        "ogTitle": "",
+        "ogDescription": "",
+        "twitterCard": "summary_large_image",
+        "canonicalPath": "/about",
+        "jsonLd": {
+          "schemaTypes": [
+            "AboutPage",
+            "Organization",
+            "BreadcrumbList"
+          ],
+          "values": {}
+        }
+      }
+    },
+    {
+      "name": "services",
+      "title": "Services | Fleet Services Agency",
+      "status": "new",
+      "type": "page",
+      "path": "/services",
+      "component": "src/pages/ServicesPage.tsx",
+      "layout": "RootLayout",
+      "heroMedia": "clean industrial service environment with fleet maintenance context",
+      "showHeader": true,
+      "showFooter": true,
+      "inHeaderNav": true,
+      "inFooterNav": true,
+      "navLabel": "Services",
+      "navOrder": 3,
+      "sections": [
+        {
+          "component": "HeroSplitSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "button",
+            "badge"
+          ]
+        },
+        {
+          "component": "BenefitsSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "card",
+            "badge"
+          ]
+        },
+        {
+          "component": "ProcessSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "card"
+          ]
+        },
+        {
+          "component": "ServicesGridSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "card",
+            "button",
+            "badge"
+          ]
+        },
+        {
+          "component": "StatsSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "card"
+          ]
+        },
+        {
+          "component": "CtaBannerSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "button",
+            "card"
+          ]
+        }
+      ],
+      "sectionContentKeys": {
+        "HeroSplitSection": "hero",
+        "BenefitsSection": "benefits",
+        "ProcessSection": "process",
+        "ServicesGridSection": "services",
+        "StatsSection": "stats",
+        "CtaBannerSection": "ctaBanner"
+      },
+      "dataBindings": [
+        {
+          "id": "servicesListing",
+          "kind": "collection",
+          "source": "services",
+          "urlSync": false,
+          "consumers": [
+            {
+              "component": "ServicesGridSection",
+              "role": "list"
+            }
+          ]
+        }
+      ],
+      "hash": "e6050653fb438532",
+      "agentPageDescription": "The Services page presents the agency\u2019s commercial offerings in a clear, easy-to-scan way. Users come here to compare what is available and decide which support fits their fleet needs. Tone: efficient, direct, and solution-oriented.",
+      "agentInstructions": "Page purpose: The services page outlines the agency\u2019s fleet service offering for businesses and helps users choose the right support.\n\nSections:\n- HeroSplitSection: pure-static. Write a service-led headline and a short explanation of who the services are for.\n- BenefitsSection: pure-static. Summarize the key value of the service offering and why it matters for business fleets.\n- ProcessSection: pure-static. Explain the service workflow clearly, emphasizing simplicity and dependable turnaround.\n- ServicesGridSection: pure-static. Write service names, short descriptions, and concise supporting copy for each service card; keep everything focused on business fleet needs.\n- StatsSection: pure-static. Add concise trust-building metrics relevant to fleet service performance.\n- CtaBannerSection: pure-static. End with a strong quote/request CTA aimed at business decision-makers.",
+      "seo": {
+        "metaDescription": "",
+        "ogTitle": "",
+        "ogDescription": "",
+        "twitterCard": "summary_large_image",
+        "canonicalPath": "/services",
+        "jsonLd": {
+          "schemaTypes": [
+            "WebPage",
+            "BreadcrumbList"
+          ],
+          "values": {}
+        }
+      }
+    },
+    {
+      "name": "service-detail",
+      "title": "Service Details | Fleet Services Agency",
+      "status": "new",
+      "type": "page",
+      "path": "/services/:slug",
+      "component": "src/pages/ServiceDetailPage.tsx",
+      "layout": "RootLayout",
+      "heroMedia": "detailed close-up of fleet service operations",
+      "showHeader": true,
+      "showFooter": true,
+      "inHeaderNav": false,
+      "inFooterNav": false,
+      "navOrder": 0,
+      "sections": [
+        {
+          "component": "ServiceDetailSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "card",
+            "badge",
+            "button"
+          ],
+          "stateDescription": "Receives item (service record resolved from the current route), loading, and error state from the page binding. Render the primary service details from item and use item.slug as the canonical related-item exclusion key when needed by child links."
+        },
+        {
+          "component": "RelatedServicesSection",
+          "executionLevel": 2,
+          "dependsOn": [
+            "ServiceDetailSection"
+          ],
+          "shadcnComponents": [
+            "card",
+            "button"
+          ],
+          "stateDescription": "Receives item (current service) and relatedItems (other service records from the same collection with the current item excluded). Must render only relatedItems and never include the current item identified by item.slug."
+        },
+        {
+          "component": "CtaBannerSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "button",
+            "card"
+          ]
+        },
+        {
+          "component": "ContactSplitSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "input",
+            "textarea",
+            "button",
+            "card"
+          ]
+        }
+      ],
+      "sectionContentKeys": {
+        "ServiceDetailSection": "serviceDetail",
+        "RelatedServicesSection": "relatedServices",
+        "CtaBannerSection": "ctaBanner",
+        "ContactSplitSection": "contact"
+      },
+      "dataBindings": [
+        {
+          "id": "serviceDetail",
+          "kind": "collectionItem",
+          "source": "services",
+          "idField": "slug",
+          "routeParam": "slug",
+          "urlSync": false,
+          "consumers": [
+            {
+              "component": "ServiceDetailSection",
+              "role": "item"
+            },
+            {
+              "component": "RelatedServicesSection",
+              "role": "related"
+            }
+          ]
+        }
+      ],
+      "hash": "74605050314c8568",
+      "agentPageDescription": "The service detail page explains one offering in more depth for visitors who want specifics before reaching out. It supports decision-making by giving a focused, trustworthy view of the service. Tone: informative, precise, and reassuring.",
+      "agentInstructions": "Page purpose: A detailed service page explaining one fleet service in depth, with related options and a contact prompt.\n\nSections:\n- ServiceDetailSection: collection-bound. The service title, description, and detailed content come from the live service item. Write only labels, short introductory text, and any empty-state or supporting copy; do not invent service-specific facts.\n- RelatedServicesSection: collection-bound. Related service cards come from live collection data. Write only the heading, short subtitle, and any empty-state text; do not write item details.\n- CtaBannerSection: pure-static. Write a concise CTA encouraging businesses to request a quote or learn more.\n- ContactSplitSection: pure-static. Provide contact-oriented headline, supportive copy, and form/help text; keep it professional and local-business focused.",
+      "seo": {
+        "metaDescription": "",
+        "ogTitle": "",
+        "ogDescription": "",
+        "twitterCard": "summary_large_image",
+        "jsonLd": {
+          "schemaTypes": [
+            "WebPage",
+            "BreadcrumbList"
+          ],
+          "values": {}
+        }
+      }
+    },
+    {
+      "name": "contact",
+      "title": "Contact | Fleet Services Agency",
+      "status": "new",
+      "type": "page",
+      "path": "/contact",
+      "component": "src/pages/ContactPage.tsx",
+      "layout": "RootLayout",
+      "heroMedia": "simple business contact setting with industrial accents",
+      "showHeader": true,
+      "showFooter": true,
+      "inHeaderNav": true,
+      "inFooterNav": true,
+      "navLabel": "Contact",
+      "navOrder": 4,
+      "sections": [
+        {
+          "component": "MapSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "card"
+          ]
+        },
+        {
+          "component": "StatsSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "card",
+            "badge"
+          ]
+        },
+        {
+          "component": "CtaBannerSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "button",
+            "card"
+          ]
+        },
+        {
+          "component": "ContactSplitSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "input",
+            "textarea",
+            "button",
+            "card"
+          ]
+        }
+      ],
+      "sectionContentKeys": {
+        "MapSection": "map",
+        "StatsSection": "stats",
+        "CtaBannerSection": "ctaBanner",
+        "ContactSplitSection": "contact"
+      },
+      "hash": "abbb473452950150",
+      "agentPageDescription": "The Contact page gives businesses a direct route to start a conversation or request service. It should feel simple, responsive, and low-friction, encouraging inquiries from local commercial clients. Tone: welcoming, efficient, and action-focused.",
+      "agentInstructions": "Page purpose: The contact page makes it easy for businesses to request fleet service information and get in touch.\n\nSections:\n- MapSection: pure-static. Provide a local-service heading and short supporting text that introduces the service area or office location.\n- StatsSection: pure-static. Add concise credibility or response-time metrics that support conversion.\n- CtaBannerSection: pure-static. Write a direct prompt to contact the agency for a quote or consultation.\n- ContactSplitSection: pure-static. Write the contact form labels, helper text, and submission prompt; keep the tone clear and businesslike.",
+      "seo": {
+        "metaDescription": "",
+        "ogTitle": "",
+        "ogDescription": "",
+        "twitterCard": "summary_large_image",
+        "canonicalPath": "/contact",
+        "jsonLd": {
+          "schemaTypes": [
+            "ContactPage",
+            "BreadcrumbList"
+          ],
+          "values": {}
+        }
+      }
+    },
+    {
+      "name": "privacy",
+      "title": "Privacy Policy | Fleet Services Agency",
+      "status": "new",
+      "type": "page",
+      "path": "/privacy",
+      "component": "src/pages/PrivacyPage.tsx",
+      "layout": "RootLayout",
+      "showHeader": true,
+      "showFooter": true,
+      "inHeaderNav": false,
+      "inFooterNav": true,
+      "navLabel": "Privacy Policy",
+      "navOrder": 5,
+      "sections": [
+        {
+          "component": "TextProseSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "prose"
+          ]
+        }
+      ],
+      "sectionContentKeys": {
+        "TextProseSection": "prose"
+      },
+      "hash": "65990bf2fcddfcf4",
+      "agentPageDescription": "Privacy policy page.",
+      "agentInstructions": "Page purpose: The privacy page explains how visitor information is handled.\n\nSections:\n- TextProseSection: pure-static. Write straightforward policy copy with clear headings and readable paragraphs; keep it legally appropriate and unambiguous.",
+      "seo": {
+        "metaDescription": "",
+        "ogTitle": "",
+        "ogDescription": "",
+        "twitterCard": "summary",
+        "canonicalPath": "/privacy",
+        "jsonLd": {
+          "schemaTypes": [
+            "WebPage",
+            "BreadcrumbList"
+          ],
+          "values": {}
+        }
+      }
+    },
+    {
+      "name": "terms",
+      "title": "Terms \u0026 Conditions | Fleet Services Agency",
+      "status": "new",
+      "type": "page",
+      "path": "/terms",
+      "component": "src/pages/TermsPage.tsx",
+      "layout": "RootLayout",
+      "showHeader": true,
+      "showFooter": true,
+      "inHeaderNav": false,
+      "inFooterNav": true,
+      "navLabel": "Terms of Use",
+      "navOrder": 6,
+      "sections": [
+        {
+          "component": "TextProseSection",
+          "executionLevel": 1,
+          "dependsOn": [],
+          "shadcnComponents": [
+            "prose"
+          ]
+        }
+      ],
+      "sectionContentKeys": {
+        "TextProseSection": "prose"
+      },
+      "hash": "ad0b11836dc0a682",
+      "agentPageDescription": "Terms of use page.",
+      "agentInstructions": "Page purpose: The terms page outlines the website and service usage conditions.\n\nSections:\n- TextProseSection: pure-static. Write concise terms copy with clear section headings and plain-language legal wording.",
+      "seo": {
+        "metaDescription": "",
+        "ogTitle": "",
+        "ogDescription": "",
+        "twitterCard": "summary",
+        "canonicalPath": "/terms",
+        "jsonLd": {
+          "schemaTypes": [
+            "WebPage",
+            "BreadcrumbList"
+          ],
+          "values": {}
+        }
+      }
+    },
+    {
+      "name": "404",
+      "title": "Page Not Found | Fleet Services Agency",
+      "status": "new",
+      "type": "error",
+      "path": "*",
+      "component": "src/pages/NotFoundPage.tsx",
+      "layout": "RootLayout",
+      "showHeader": true,
+      "showFooter": true,
+      "inHeaderNav": false,
+      "inFooterNav": false,
+      "navOrder": 0,
+      "sections": [],
+      "hash": "fb193698206f7543",
+      "agentPageDescription": "Not-found fallback page. Friendly message with a link back to the homepage.",
+      "agentInstructions": "Page purpose: The error page helps users recover when a URL cannot be found.\n\nSections:"
+    }
+  ],
+  "collections": [
+    {
+      "name": "services",
+      "singularName": "service",
+      "listingPage": "services",
+      "detailPage": "service-detail",
+      "itemCount": 6
+    }
+  ],
+  "routing": {
+    "file": "src/App.tsx",
+    "routes": [
+      {
+        "path": "/",
+        "page": "index",
+        "component": "src/pages/HomePage.tsx",
+        "layout": "RootLayout"
+      },
+      {
+        "path": "/about",
+        "page": "about",
+        "component": "src/pages/AboutPage.tsx",
+        "layout": "RootLayout"
+      },
+      {
+        "path": "/services",
+        "page": "services",
+        "component": "src/pages/ServicesPage.tsx",
+        "layout": "RootLayout"
+      },
+      {
+        "path": "/services/:slug",
+        "page": "service-detail",
+        "component": "src/pages/ServiceDetailPage.tsx",
+        "layout": "RootLayout"
+      },
+      {
+        "path": "/contact",
+        "page": "contact",
+        "component": "src/pages/ContactPage.tsx",
+        "layout": "RootLayout"
+      },
+      {
+        "path": "/privacy",
+        "page": "privacy",
+        "component": "src/pages/PrivacyPage.tsx",
+        "layout": "RootLayout"
+      },
+      {
+        "path": "/terms",
+        "page": "terms",
+        "component": "src/pages/TermsPage.tsx",
+        "layout": "RootLayout"
+      },
+      {
+        "path": "*",
+        "page": "404",
+        "component": "src/pages/NotFoundPage.tsx",
+        "layout": "RootLayout"
+      }
+    ],
+    "errorComponent": "src/pages/NotFoundPage.tsx"
+  },
+  "seo": {
+    "sitemap": {
+      "baseUrl": ""
+    }
+  }
+}

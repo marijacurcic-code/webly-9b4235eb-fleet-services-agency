@@ -1,0 +1,18 @@
+{
+  "name": "404",
+  "title": "Page Not Found | Fleet Services Agency",
+  "status": "existing",
+  "type": "error",
+  "path": "*",
+  "component": "src/pages/NotFoundPage.tsx",
+  "layout": "RootLayout",
+  "showHeader": true,
+  "showFooter": true,
+  "inHeaderNav": false,
+  "inFooterNav": false,
+  "navOrder": 0,
+  "sections": [],
+  "hash": "fb193698206f7543",
+  "agentPageDescription": "Not-found fallback page. Friendly message with a link back to the homepage.",
+  "agentInstructions": "Page purpose: The error page helps users recover when a URL cannot be found.\n\nSections:"
+}

@@ -1,0 +1,46 @@
+{
+  "name": "CtaBannerSection",
+  "type": "section",
+  "file": "src/components/CtaBannerSection.tsx",
+  "contentKey": "ctaBanner",
+  "executionLevel": 2,
+  "dependsOn": [],
+  "shadcnComponents": [
+    "button"
+  ],
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "CTA headline"
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "required": false,
+      "description": "CTA supporting text"
+    },
+    {
+      "name": "ctaLabel",
+      "type": "string",
+      "required": true,
+      "description": "CTA button label"
+    },
+    {
+      "name": "ctaHref",
+      "type": "string",
+      "required": true,
+      "description": "CTA button link"
+    }
+  ],
+  "description": "Full-width industrial-style call-to-action banner.",
+  "staticContentKeys": [
+    "title",
+    "subtitle",
+    "ctaLabel",
+    "ctaHref"
+  ],
+  "hash": "ee7d36dbd8b66c2f",
+  "action": "existing"
+}

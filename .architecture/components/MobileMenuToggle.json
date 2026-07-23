@@ -1,0 +1,33 @@
+{
+  "name": "MobileMenuToggle",
+  "type": "shared",
+  "file": "src/components/MobileMenuToggle.tsx",
+  "executionLevel": 1,
+  "dependsOn": [],
+  "shadcnComponents": [
+    "button"
+  ],
+  "props": [
+    {
+      "name": "open",
+      "type": "boolean",
+      "required": true,
+      "description": "Mobile menu open state"
+    },
+    {
+      "name": "onToggle",
+      "type": "() =\u003E void",
+      "required": true,
+      "description": "Toggle handler"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Optional class name"
+    }
+  ],
+  "description": "Mobile navigation toggle button.",
+  "hash": "6499bf9d911a62d0",
+  "action": "existing"
+}

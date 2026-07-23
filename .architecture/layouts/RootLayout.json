@@ -1,0 +1,8 @@
+{
+  "name": "RootLayout",
+  "file": "src/layouts/RootLayout.tsx",
+  "uses": [
+    "Header",
+    "Footer"
+  ]
+}

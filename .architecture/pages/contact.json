@@ -1,0 +1,78 @@
+{
+  "name": "contact",
+  "title": "Contact | Fleet Services Agency",
+  "status": "existing",
+  "type": "page",
+  "path": "/contact",
+  "component": "src/pages/ContactPage.tsx",
+  "layout": "RootLayout",
+  "heroMedia": "simple business contact setting with industrial accents",
+  "showHeader": true,
+  "showFooter": true,
+  "inHeaderNav": true,
+  "inFooterNav": true,
+  "navLabel": "Contact",
+  "navOrder": 4,
+  "sections": [
+    {
+      "component": "MapSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "card"
+      ]
+    },
+    {
+      "component": "StatsSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "card",
+        "badge"
+      ]
+    },
+    {
+      "component": "CtaBannerSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "button",
+        "card"
+      ]
+    },
+    {
+      "component": "ContactSplitSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "input",
+        "textarea",
+        "button",
+        "card"
+      ]
+    }
+  ],
+  "sectionContentKeys": {
+    "MapSection": "map",
+    "StatsSection": "stats",
+    "CtaBannerSection": "ctaBanner",
+    "ContactSplitSection": "contact"
+  },
+  "hash": "abbb473452950150",
+  "agentPageDescription": "The Contact page gives businesses a direct route to start a conversation or request service. It should feel simple, responsive, and low-friction, encouraging inquiries from local commercial clients. Tone: welcoming, efficient, and action-focused.",
+  "agentInstructions": "Page purpose: The contact page makes it easy for businesses to request fleet service information and get in touch.\n\nSections:\n- MapSection: pure-static. Provide a local-service heading and short supporting text that introduces the service area or office location.\n- StatsSection: pure-static. Add concise credibility or response-time metrics that support conversion.\n- CtaBannerSection: pure-static. Write a direct prompt to contact the agency for a quote or consultation.\n- ContactSplitSection: pure-static. Write the contact form labels, helper text, and submission prompt; keep the tone clear and businesslike.",
+  "seo": {
+    "metaDescription": "",
+    "ogTitle": "",
+    "ogDescription": "",
+    "twitterCard": "summary_large_image",
+    "canonicalPath": "/contact",
+    "jsonLd": {
+      "schemaTypes": [
+        "ContactPage",
+        "BreadcrumbList"
+      ],
+      "values": {}
+    }
+  }
+}

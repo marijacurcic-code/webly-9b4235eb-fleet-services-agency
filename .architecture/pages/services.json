@@ -1,0 +1,110 @@
+{
+  "name": "services",
+  "title": "Services | Fleet Services Agency",
+  "status": "existing",
+  "type": "page",
+  "path": "/services",
+  "component": "src/pages/ServicesPage.tsx",
+  "layout": "RootLayout",
+  "heroMedia": "clean industrial service environment with fleet maintenance context",
+  "showHeader": true,
+  "showFooter": true,
+  "inHeaderNav": true,
+  "inFooterNav": true,
+  "navLabel": "Services",
+  "navOrder": 3,
+  "sections": [
+    {
+      "component": "HeroSplitSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "button",
+        "badge"
+      ]
+    },
+    {
+      "component": "BenefitsSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "card",
+        "badge"
+      ]
+    },
+    {
+      "component": "ProcessSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "card"
+      ]
+    },
+    {
+      "component": "ServicesGridSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "card",
+        "button",
+        "badge"
+      ]
+    },
+    {
+      "component": "StatsSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "card"
+      ]
+    },
+    {
+      "component": "CtaBannerSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "button",
+        "card"
+      ]
+    }
+  ],
+  "sectionContentKeys": {
+    "HeroSplitSection": "hero",
+    "BenefitsSection": "benefits",
+    "ProcessSection": "process",
+    "ServicesGridSection": "services",
+    "StatsSection": "stats",
+    "CtaBannerSection": "ctaBanner"
+  },
+  "dataBindings": [
+    {
+      "id": "servicesListing",
+      "kind": "collection",
+      "source": "services",
+      "urlSync": false,
+      "consumers": [
+        {
+          "component": "ServicesGridSection",
+          "role": "list"
+        }
+      ]
+    }
+  ],
+  "hash": "e6050653fb438532",
+  "agentPageDescription": "The Services page presents the agency\u2019s commercial offerings in a clear, easy-to-scan way. Users come here to compare what is available and decide which support fits their fleet needs. Tone: efficient, direct, and solution-oriented.",
+  "agentInstructions": "Page purpose: The services page outlines the agency\u2019s fleet service offering for businesses and helps users choose the right support.\n\nSections:\n- HeroSplitSection: pure-static. Write a service-led headline and a short explanation of who the services are for.\n- BenefitsSection: pure-static. Summarize the key value of the service offering and why it matters for business fleets.\n- ProcessSection: pure-static. Explain the service workflow clearly, emphasizing simplicity and dependable turnaround.\n- ServicesGridSection: pure-static. Write service names, short descriptions, and concise supporting copy for each service card; keep everything focused on business fleet needs.\n- StatsSection: pure-static. Add concise trust-building metrics relevant to fleet service performance.\n- CtaBannerSection: pure-static. End with a strong quote/request CTA aimed at business decision-makers.",
+  "seo": {
+    "metaDescription": "",
+    "ogTitle": "",
+    "ogDescription": "",
+    "twitterCard": "summary_large_image",
+    "canonicalPath": "/services",
+    "jsonLd": {
+      "schemaTypes": [
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "values": {}
+    }
+  }
+}

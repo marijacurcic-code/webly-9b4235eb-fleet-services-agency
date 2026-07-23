@@ -1,0 +1,31 @@
+{
+  "name": "StatItem",
+  "type": "shared",
+  "file": "src/components/StatItem.tsx",
+  "executionLevel": 1,
+  "dependsOn": [],
+  "shadcnComponents": [],
+  "props": [
+    {
+      "name": "value",
+      "type": "string",
+      "required": true,
+      "description": "Stat value"
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "required": true,
+      "description": "Stat label"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Optional class name"
+    }
+  ],
+  "description": "Single stat display item.",
+  "hash": "05f0b0f9a820f7ea",
+  "action": "existing"
+}

@@ -1,0 +1,37 @@
+{
+  "name": "TextProseSection",
+  "type": "section",
+  "file": "src/components/TextProseSection.tsx",
+  "contentKey": "prose",
+  "executionLevel": 2,
+  "dependsOn": [],
+  "shadcnComponents": [],
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Document title"
+    },
+    {
+      "name": "lastUpdated",
+      "type": "string",
+      "required": false,
+      "description": "Optional updated date"
+    },
+    {
+      "name": "sections",
+      "type": "{ heading: string; paragraphs: string[] }[]",
+      "required": true,
+      "description": "Prose content sections"
+    }
+  ],
+  "description": "Long-form legal prose section for privacy and terms pages.",
+  "staticContentKeys": [
+    "title",
+    "lastUpdated",
+    "sections"
+  ],
+  "hash": "f28eba863d8c11e5",
+  "action": "existing"
+}

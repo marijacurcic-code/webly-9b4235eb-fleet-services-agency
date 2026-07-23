@@ -1,0 +1,11 @@
+{
+  "shadcnInstall": [
+    "button",
+    "card",
+    "input",
+    "label",
+    "sheet",
+    "textarea"
+  ],
+  "npmDependencies": []
+}

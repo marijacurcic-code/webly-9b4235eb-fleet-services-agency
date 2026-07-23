@@ -1,0 +1,37 @@
+{
+  "name": "TimelineItem",
+  "type": "shared",
+  "file": "src/components/TimelineItem.tsx",
+  "executionLevel": 1,
+  "dependsOn": [],
+  "shadcnComponents": [],
+  "props": [
+    {
+      "name": "year",
+      "type": "string",
+      "required": true,
+      "description": "Timeline marker"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Milestone title"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "required": true,
+      "description": "Milestone description"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Optional class name"
+    }
+  ],
+  "description": "Timeline milestone item for company story.",
+  "hash": "212a438508303e2f",
+  "action": "existing"
+}

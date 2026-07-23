@@ -1,0 +1,25 @@
+{
+  "name": "FooterNav",
+  "type": "shared",
+  "file": "src/components/FooterNav.tsx",
+  "executionLevel": 1,
+  "dependsOn": [],
+  "shadcnComponents": [],
+  "props": [
+    {
+      "name": "links",
+      "type": "{ label: string; href: string }[]",
+      "required": true,
+      "description": "Footer navigation links"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Optional class name"
+    }
+  ],
+  "description": "Minimal footer navigation list.",
+  "hash": "aafdb9ea3f7b4dd4",
+  "action": "existing"
+}

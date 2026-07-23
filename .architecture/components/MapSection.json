@@ -1,0 +1,39 @@
+{
+  "name": "MapSection",
+  "type": "section",
+  "file": "src/components/MapSection.tsx",
+  "contentKey": "map",
+  "executionLevel": 2,
+  "dependsOn": [
+    "SectionHeading"
+  ],
+  "shadcnComponents": [],
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Section title"
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "required": false,
+      "description": "Section subtitle"
+    },
+    {
+      "name": "embedUrl",
+      "type": "string",
+      "required": true,
+      "description": "Map embed URL"
+    }
+  ],
+  "description": "Local visibility map section for contact and SEO relevance.",
+  "staticContentKeys": [
+    "title",
+    "subtitle",
+    "embedUrl"
+  ],
+  "hash": "5b542a9feccda9c8",
+  "action": "existing"
+}

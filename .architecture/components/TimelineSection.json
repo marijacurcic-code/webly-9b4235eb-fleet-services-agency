@@ -1,0 +1,42 @@
+{
+  "name": "TimelineSection",
+  "type": "section",
+  "file": "src/components/TimelineSection.tsx",
+  "contentKey": "timeline",
+  "executionLevel": 2,
+  "dependsOn": [
+    "SectionHeading",
+    "TimelineItem"
+  ],
+  "shadcnComponents": [
+    "card"
+  ],
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Section title"
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "required": false,
+      "description": "Section subtitle"
+    },
+    {
+      "name": "items",
+      "type": "{ year: string; title: string; description: string }[]",
+      "required": true,
+      "description": "Timeline items"
+    }
+  ],
+  "description": "Company history and milestones timeline.",
+  "staticContentKeys": [
+    "title",
+    "subtitle",
+    "items"
+  ],
+  "hash": "1d0a277c8f6aa8c5",
+  "action": "existing"
+}

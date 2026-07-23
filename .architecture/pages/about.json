@@ -1,0 +1,95 @@
+{
+  "name": "about",
+  "title": "About | Fleet Services Agency",
+  "status": "existing",
+  "type": "page",
+  "path": "/about",
+  "component": "src/pages/AboutPage.tsx",
+  "layout": "RootLayout",
+  "heroMedia": "subtle workshop or fleet operations imagery",
+  "showHeader": true,
+  "showFooter": true,
+  "inHeaderNav": true,
+  "inFooterNav": true,
+  "navLabel": "About",
+  "navOrder": 2,
+  "sections": [
+    {
+      "component": "HeroSplitSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "button"
+      ]
+    },
+    {
+      "component": "AboutImageSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "card"
+      ]
+    },
+    {
+      "component": "BenefitsSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "card",
+        "badge"
+      ]
+    },
+    {
+      "component": "ProcessSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "card",
+        "separator"
+      ]
+    },
+    {
+      "component": "StatsSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "card"
+      ]
+    },
+    {
+      "component": "CtaBannerSection",
+      "executionLevel": 1,
+      "dependsOn": [],
+      "shadcnComponents": [
+        "button",
+        "card"
+      ]
+    }
+  ],
+  "sectionContentKeys": {
+    "HeroSplitSection": "hero",
+    "AboutImageSection": "aboutStory",
+    "BenefitsSection": "benefits",
+    "ProcessSection": "process",
+    "StatsSection": "stats",
+    "CtaBannerSection": "ctaBanner"
+  },
+  "hash": "4d95acb20888305a",
+  "agentPageDescription": "The About page builds credibility by explaining who the agency is, how it works, and what it values. It reassures business visitors that they are dealing with a capable, long-term partner. Tone: grounded, professional, and trustworthy.",
+  "agentInstructions": "Page purpose: The about page tells the company story, builds trust, and explains the agency\u2019s approach to fleet services.\n\nSections:\n- HeroSplitSection: pure-static. Write an authoritative about-page headline and a short brand story subheadline.\n- AboutImageSection: pure-static. Use this section to communicate values, team focus, or operational credibility; do not add unrelated marketing content.\n- BenefitsSection: pure-static. Describe the company\u2019s strengths, service standards, and reliability promise.\n- ProcessSection: pure-static. Explain how the team works with business clients from initial contact through ongoing support.\n- StatsSection: pure-static. Include credibility metrics, years in business, or service-area indicators in concise copy.\n- CtaBannerSection: pure-static. Close with a simple CTA to contact the agency or review services.",
+  "seo": {
+    "metaDescription": "",
+    "ogTitle": "",
+    "ogDescription": "",
+    "twitterCard": "summary_large_image",
+    "canonicalPath": "/about",
+    "jsonLd": {
+      "schemaTypes": [
+        "AboutPage",
+        "Organization",
+        "BreadcrumbList"
+      ],
+      "values": {}
+    }
+  }
+}
